@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChromaOps Case Study | Thach Dang Van</title>
+    <meta
+      name="description"
+      content="ChromaOps portfolio case study by Thach Dang Van. AI-powered DesignOps platform for generating color foundations, accessibility validation, design tokens, audits, and implementation-ready documentation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="fi-bs-magic-wand.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell case-shell ds-case-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html#top">
+          <span class="brand-mark">TD</span>
+          <span class="brand-text">Thach Dang Van</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="case-hero section ds-hero">
+          <div class="case-hero-copy">
+            <a class="back-link" href="index.html#work">Back to selected work</a>
+            <p class="eyebrow">AI Product | DesignOps platform</p>
+            <h1>ChromaOps</h1>
+            <p class="case-lead">
+              An AI-powered DesignOps platform that generates color foundations, validates accessibility,
+              creates design tokens, audits existing systems, and produces implementation-ready documentation.
+            </p>
+          </div>
+          <aside class="case-summary card">
+            <dl>
+              <div>
+                <dt>Project</dt>
+                <dd>ChromaOps - AI-Powered DesignOps Platform for Design Systems</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Product Designer & AI Product Builder</dd>
+              </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>2026</dd>
+              </div>
+              <div>
+                <dt>Tools</dt>
+                <dd>Google AI Studio, Figma, Claude, VS Code, Design Tokens, WCAG, APCA</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="case-visual ds-system-visual chromaops-visual card" aria-label="ChromaOps platform model">
+          <div class="ds-orbit-visual">
+            <div class="chromaops-ai-ribbon" aria-hidden="true">
+              <span>Brand input</span>
+              <span>AI generation</span>
+              <span>A11Y validation</span>
+              <span>Token export</span>
+            </div>
+            <div class="chromaops-node chromaops-node-a" aria-hidden="true"></div>
+            <div class="chromaops-node chromaops-node-b" aria-hidden="true"></div>
+            <div class="chromaops-node chromaops-node-c" aria-hidden="true"></div>
+            <div class="chromaops-node chromaops-node-d" aria-hidden="true"></div>
+            <div class="ds-orbit-core">
+              <span>AI</span>
+              <strong>ChromaOps</strong>
+              <small>DesignOps workflow engine</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-foundation">
+              <span>01</span>
+              <strong>Create</strong>
+              <small>Color foundations and palettes</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-components">
+              <span>02</span>
+              <strong>Validate</strong>
+              <small>WCAG and APCA accessibility</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-standards">
+              <span>03</span>
+              <strong>Document</strong>
+              <small>Design.md and system guidance</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-docs">
+              <span>04</span>
+              <strong>Deliver</strong>
+              <small>JSON, CSS, Tailwind exports</small>
+            </div>
+          </div>
+        </section>
+
+        <nav class="case-jump-nav" aria-label="ChromaOps case study sections">
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#role">Role</a>
+          <a href="#research">Research</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Features</a>
+          <a href="#ux-decisions">UX Decisions</a>
+          <a href="#impact">Impact</a>
+          <a href="#reflection">Reflection</a>
+        </nav>
+
+        <section class="section recruiter-snapshot" aria-label="ChromaOps case study highlights">
+          <div class="section-heading">
+            <p class="eyebrow">Case Study Highlights</p>
+            <h2>What this project shows about AI-assisted DesignOps.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>01</span>
+              <h3>AI workflow design</h3>
+              <p>Designed a guided workflow that turns brand inputs, URLs, or screenshots into usable system foundations.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>02</span>
+              <h3>Design system thinking</h3>
+              <p>Structured the product around foundations, semantic tokens, component tokens, documentation, audits, and exports.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>03</span>
+              <h3>Accessibility first</h3>
+              <p>Integrated WCAG, APCA, contrast ratios, readability checks, and risky-pairing warnings before implementation.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>04</span>
+              <h3>Design-to-code delivery</h3>
+              <p>Produced JSON, CSS, Tailwind, and Design.md outputs to reduce friction between designers and engineers.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="overview">
+          <article class="case-block card">
+            <p class="eyebrow">Overview</p>
+            <h2>From a simple input to a complete color foundation.</h2>
+            <p>
+              ChromaOps is an AI-powered DesignOps platform built to simplify and automate one of the most repetitive and time-consuming parts of Design System creation.
+            </p>
+            <p>
+              The platform helps designers transform a brand color, website, existing Design System, product screenshot, or visual reference into a complete Design System color foundation.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Core Output</p>
+            <h2>Production-ready system foundations.</h2>
+            <ul class="detail-list">
+              <li>Light and Dark Mode color systems.</li>
+              <li>Semantic and component-level token structures.</li>
+              <li>Accessibility validation and contrast risk detection.</li>
+              <li>Implementation-ready documentation and exports.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps workspace screens">
+          <figure class="screen-shot screen-shot-large card">
+            <img src="assets/chromaops/workspace-overview.png" alt="ChromaOps multi-project workspace overview" loading="lazy" />
+            <figcaption>
+              <h3>Multi-project workspace</h3>
+              <p>The workspace gives teams a place to manage separate brands, projects, and Design System foundations.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/project-setup.png" alt="ChromaOps project setup screen" loading="lazy" />
+            <figcaption>
+              <h3>Guided project setup</h3>
+              <p>Users start with a clear setup flow before moving into AI-assisted generation.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/color-inputs.png" alt="ChromaOps brand color input screen" loading="lazy" />
+            <figcaption>
+              <h3>Flexible color inputs</h3>
+              <p>The workflow supports a simple brand color or more detailed primary, neutral, and semantic inputs.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section split-section" id="problem">
+          <div class="section-heading narrow">
+            <p class="eyebrow">The Problem</p>
+            <h2>Color system setup is repetitive, fragmented, and difficult to scale.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              Building a professional color foundation typically requires multiple tools, manual accessibility testing, token creation, documentation writing, and developer handoff preparation.
+            </p>
+            <p>
+              These activities can consume days or weeks before a Design System can be adopted by a product team, and the larger the ecosystem becomes, the harder it is to maintain consistency.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Manual Workflow Pain Points</p>
+            <h2>Designers repeat structured work across every new system.</h2>
+          </div>
+          <div class="ds-problem-grid">
+            <article class="card ds-problem-card">
+              <span>CLR</span>
+              <h3>Palette creation</h3>
+              <p>Teams manually create color scales, dark mode palettes, and semantic color sets.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>A11Y</span>
+              <h3>Late accessibility checks</h3>
+              <p>Contrast failures are often found after design decisions have already moved into implementation.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>TKN</span>
+              <h3>Token naming complexity</h3>
+              <p>Token naming becomes difficult as systems scale into hundreds or thousands of values.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>DOC</span>
+              <h3>Outdated documentation</h3>
+              <p>Documentation requires significant maintenance, so teams often avoid updating it.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="role">
+          <article class="case-block card">
+            <p class="eyebrow">My Role</p>
+            <h2>Product Designer & AI Product Builder.</h2>
+            <p>
+              I designed and built ChromaOps using Google AI Studio to explore how AI can reduce Design System setup time while maintaining designer control, quality, consistency, and accessibility.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Responsibilities</p>
+            <ul class="detail-list">
+              <li>Product strategy and problem discovery.</li>
+              <li>UX research and information architecture.</li>
+              <li>Design System architecture and UX/UI design.</li>
+              <li>AI workflow design and prompt engineering.</li>
+              <li>Rapid prototyping, product validation, and documentation design.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="research">
+          <div class="section-heading">
+            <p class="eyebrow">Research & Discovery</p>
+            <h2>Studying how mature systems manage foundations and tokens.</h2>
+          </div>
+          <div class="ds-research-grid">
+            <article class="card case-card">
+              <h3>References studied</h3>
+              <p>Material Design, Fluent Design System, Carbon Design System, Ant Design, Polaris, Tailwind CSS, Style Dictionary, and Figma Tokens.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Key insight</h3>
+              <p>Color creation is not the hardest part. Maintaining consistency across products is the bigger operational challenge.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Design opportunity</h3>
+              <p>Color scales, accessibility rules, naming conventions, token hierarchies, and documentation templates follow repeatable structures that AI can assist.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="architecture">
+          <div class="section-heading">
+            <p class="eyebrow">Product Architecture</p>
+            <h2>The platform is structured as connected DesignOps layers.</h2>
+          </div>
+          <div class="ds-layer-grid">
+            <article class="card ds-layer-card">
+              <span>01</span>
+              <h3>Foundation Layer</h3>
+              <p>Color Generator, Accessibility Engine, and Semantic Token Engine.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>02</span>
+              <h3>Design System Layer</h3>
+              <p>Token Naming Generator, Component Token Generator, and Token Audit System.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>03</span>
+              <h3>Documentation Layer</h3>
+              <p>Design.md Generator and Design System documentation workflows.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>04</span>
+              <h3>Intelligence Layer</h3>
+              <p>Website Analyzer, Visual Reference Analyzer, and Design Comparison Engine.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>05</span>
+              <h3>Delivery Layer</h3>
+              <p>JSON Export, CSS Export, Tailwind Export, and implementation-ready handoff outputs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">Key Features</p>
+            <h2>Tools for creation, validation, auditing, documentation, and delivery.</h2>
+          </div>
+          <div class="case-section-grid">
+            <article class="case-block card">
+              <h3>Multi-Project Workspace</h3>
+              <p>Users can create multiple Design System projects, save progress, manage separate brands, and maintain independent token libraries.</p>
+            </article>
+            <article class="case-block card">
+              <h3>AI Color Generation</h3>
+              <p>AI generates Primary, Neutral, Success, Warning, Error, and Info families across 25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, and 950 scales.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Automatic Dark Mode</h3>
+              <p>The system generates dark palettes, contrast-adjusted scales, semantic mappings, and dark mode token relationships.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Accessibility Validation</h3>
+              <p>ChromaOps evaluates WCAG compliance, APCA contrast, contrast ratios, readability scores, failed combinations, and risky color pairings.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Semantic Color System</h3>
+              <p>Generated colors are mapped into feedback, action, surface, background, border, text, and overlay roles for scalable product use.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Live Component Preview</h3>
+              <p>Dashboard, UI kit, mobile, and website previews show how tokens behave in realistic interfaces instead of isolated swatches.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps color generation screens">
+          <figure class="screen-shot screen-shot-large card">
+            <img src="assets/chromaops/palette-generation.png" alt="ChromaOps AI palette generation screen" loading="lazy" />
+            <figcaption>
+              <h3>AI palette generation</h3>
+              <p>ChromaOps generates complete production palettes from structured design inputs.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/light-mode-palette.png" alt="ChromaOps light mode palette screen" loading="lazy" />
+            <figcaption>
+              <h3>Light mode foundation</h3>
+              <p>The generated color foundation includes full scales across product-ready color families.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/dark-mode-palette.png" alt="ChromaOps dark mode palette screen" loading="lazy" />
+            <figcaption>
+              <h3>Dark mode generation</h3>
+              <p>Dark palettes and token relationships are generated alongside light mode foundations.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/accessibility-validation.png" alt="ChromaOps accessibility validation screen" loading="lazy" />
+            <figcaption>
+              <h3>Accessibility validation</h3>
+              <p>Contrast and readability issues are surfaced before implementation begins.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/semantic-tokens.png" alt="ChromaOps semantic token mapping screen" loading="lazy" />
+            <figcaption>
+              <h3>Semantic token mapping</h3>
+              <p>Generated colors are converted into product roles such as action, feedback, text, border, and surface.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps live preview screens">
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/component-preview-dashboard.png" alt="ChromaOps dashboard preview screen" loading="lazy" />
+            <figcaption>
+              <h3>Dashboard preview</h3>
+              <p>Enterprise dashboard previews help evaluate hierarchy across KPIs, charts, cards, and tables.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/component-preview-ui-kit.png" alt="ChromaOps UI kit preview screen" loading="lazy" />
+            <figcaption>
+              <h3>UI kit preview</h3>
+              <p>Core controls show how generated tokens behave across buttons, inputs, alerts, and form elements.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/mobile-preview.png" alt="ChromaOps mobile preview screen" loading="lazy" />
+            <figcaption>
+              <h3>Mobile preview</h3>
+              <p>Mobile screens make it easier to assess readability and accessibility across compact layouts.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/website-preview.png" alt="ChromaOps website preview screen" loading="lazy" />
+            <figcaption>
+              <h3>Website preview</h3>
+              <p>Marketing and website previews help validate color decisions before development starts.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section split-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Token Automation</p>
+            <h2>Reducing hundreds of manual naming and component-state decisions.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              ChromaOps generates naming structures in kebab case, camel case, or snake case for web and mobile platforms. Example outputs include button-primary-bg-default, button-primary-bg-hover, input-border-focus, and card-surface-default.
+            </p>
+            <p>
+              It also creates component token structures for states including default, hover, active, focus, selected, disabled, error, warning, and success across components such as buttons, inputs, cards, modals, alerts, badges, navigation, accordions, and pagination.
+            </p>
+          </div>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps token automation screens">
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/token-naming-generator.png" alt="ChromaOps token naming generator screen" loading="lazy" />
+            <figcaption>
+              <h3>Token naming generator</h3>
+              <p>Users can generate consistent naming systems across casing conventions and platform needs.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/component-token-generator.png" alt="ChromaOps component token generator screen" loading="lazy" />
+            <figcaption>
+              <h3>Component token generator</h3>
+              <p>Component-level tokens are generated across interaction states, reducing repetitive setup work.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section case-section-grid">
+          <article class="case-block card">
+            <p class="eyebrow">Design Token Audit</p>
+            <h2>Improving existing token libraries.</h2>
+            <p>
+              Teams can import Design Tokens JSON, CSS Variables, or existing token libraries. The platform analyzes accessibility issues, missing scales, duplicate values, naming inconsistencies, and structural problems.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Figma Token Analysis</p>
+            <h2>Supporting teams already using tokens.</h2>
+            <p>
+              ChromaOps can normalize token structures, resolve aliases, validate naming, suggest structure improvements, and generate documentation from existing Figma or Tokens Studio systems.
+            </p>
+          </article>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps audit screens">
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/token-audit.png" alt="ChromaOps design token audit screen" loading="lazy" />
+            <figcaption>
+              <h3>Design token audit</h3>
+              <p>The audit workflow identifies gaps, duplicate values, naming issues, and structural problems.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/figma-token-analysis.png" alt="ChromaOps Figma token analysis screen" loading="lazy" />
+            <figcaption>
+              <h3>Figma token analysis</h3>
+              <p>Existing token libraries can be normalized, validated, and converted into clearer documentation.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Intelligence Tools</p>
+            <h2>Turning references and existing products into system inputs.</h2>
+          </div>
+          <div class="ds-principles-grid">
+            <article class="card ds-principle-card">
+              <span>01</span>
+              <h3>Design.md Generator</h3>
+              <p>Automatically creates design principles, color foundations, accessibility guidance, semantic token definitions, component guidelines, and developer handoff notes.</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>02</span>
+              <h3>Website Analyzer</h3>
+              <p>Extracts colors, typography, radius, shadows, layout patterns, and visual principles from a website URL, then converts them into Design.md, tokens, and Tailwind configurations.</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>03</span>
+              <h3>Website Comparison</h3>
+              <p>Compares two websites across colors, typography, components, design language, and consistency for audits, benchmarking, and competitor analysis.</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>04</span>
+              <h3>Visual Reference Extraction</h3>
+              <p>Analyzes uploaded screenshots from websites, mobile apps, SaaS products, or design inspiration to generate a unique system foundation inspired by those references.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section screen-gallery" aria-label="ChromaOps intelligence tool screens">
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/design-md-generator.png" alt="ChromaOps Design.md generator screen" loading="lazy" />
+            <figcaption>
+              <h3>Design.md generator</h3>
+              <p>The platform turns generated foundations into structured documentation for design and engineering teams.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/documentation-output.png" alt="ChromaOps documentation output screen" loading="lazy" />
+            <figcaption>
+              <h3>Documentation output</h3>
+              <p>Generated guidance includes principles, usage rules, accessibility notes, token details, and handoff instructions.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/website-analyzer.png" alt="ChromaOps website analyzer screen" loading="lazy" />
+            <figcaption>
+              <h3>Website analyzer</h3>
+              <p>Website inputs can be analyzed and transformed into foundations, tokens, and documentation.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/website-comparison.png" alt="ChromaOps website comparison screen" loading="lazy" />
+            <figcaption>
+              <h3>Website comparison</h3>
+              <p>Comparison tools support competitive analysis, design audits, and visual language benchmarking.</p>
+            </figcaption>
+          </figure>
+          <figure class="screen-shot card">
+            <img src="assets/chromaops/visual-reference-extraction.png" alt="ChromaOps visual reference extraction screen" loading="lazy" />
+            <figcaption>
+              <h3>Visual reference extraction</h3>
+              <p>AI extracts visual tone, palette direction, and style patterns to inspire a new system foundation.</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section" id="ux-decisions">
+          <div class="section-heading">
+            <p class="eyebrow">UX Decisions</p>
+            <h2>Balancing automation with designer control.</h2>
+          </div>
+          <div class="ds-research-grid">
+            <article class="card case-card">
+              <h3>Real interfaces over swatches</h3>
+              <p>I used realistic previews because designers make color decisions in product context, not in isolation.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Accessibility first</h3>
+              <p>Accessibility is integrated into generation rather than treated as a final validation step.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Design-to-code workflow</h3>
+              <p>Every output was designed to reduce friction between design decisions and engineering implementation.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Flexible exports</h3>
+              <p>JSON, CSS, Tailwind, and Design.md outputs support different organization workflows and implementation needs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Design Challenge</p>
+            <h2>The hardest part was deciding how much AI should control.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              If AI generated everything automatically, designers would lose flexibility. If users had to configure everything manually, the product would fail to save time.
+            </p>
+            <p>
+              The final workflow combined AI generation, manual editing, accessibility validation, live previews, and flexible exports so the experience remained both powerful and controllable.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="impact">
+          <div class="section-heading">
+            <p class="eyebrow">Outcome & Impact</p>
+            <h2>Design System setup accelerated from weeks to minutes.</h2>
+          </div>
+          <div class="ds-impact-grid">
+            <article class="metric-card card">
+              <strong>Minutes</strong>
+              <span>Color foundations, tokens, validation, and docs generated in one workflow</span>
+            </article>
+            <article class="metric-card card">
+              <strong>A11Y</strong>
+              <span>Accessibility risks surfaced before implementation begins</span>
+            </article>
+            <article class="metric-card card">
+              <strong>Handoff</strong>
+              <span>JSON, CSS, Tailwind, and Design.md outputs ready for design and engineering</span>
+            </article>
+          </div>
+          <div class="case-section-grid ds-impact-list">
+            <article class="case-block card">
+              <h3>Workflow impact</h3>
+              <ul class="detail-list">
+                <li>Faster Design System setup.</li>
+                <li>Reduced manual token management.</li>
+                <li>Improved accessibility compliance.</li>
+                <li>Consistent naming conventions.</li>
+              </ul>
+            </article>
+            <article class="case-block card">
+              <h3>Team impact</h3>
+              <ul class="detail-list">
+                <li>Automated documentation.</li>
+                <li>Better designer-developer collaboration.</li>
+                <li>Scalable DesignOps workflows.</li>
+                <li>More time for strategic design decisions.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="screen-gallery chromaops-handoff-gallery">
+            <figure class="screen-shot card">
+              <img src="assets/chromaops/export-options.png" alt="ChromaOps export options screen" loading="lazy" />
+              <figcaption>
+                <h3>Export options</h3>
+                <p>Teams can move from system decisions into practical implementation outputs.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot card">
+              <img src="assets/chromaops/final-handoff.png" alt="ChromaOps final handoff screen" loading="lazy" />
+              <figcaption>
+                <h3>Final handoff</h3>
+                <p>Generated assets support designer-developer collaboration through ready-to-use files and documentation.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section split-section" id="reflection">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Reflection</p>
+            <h2>AI should automate repetitive work, not replace design thinking.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              ChromaOps started as a simple experiment around AI-generated color systems. As the project evolved, it became clear that the bigger opportunity was not color generation itself, but the entire DesignOps workflow surrounding Design Systems.
+            </p>
+            <p>
+              This project reinforced my belief that AI should help designers spend less time on repetitive production work and more time solving user problems, improving product experiences, and making strategic decisions.
+            </p>
+          </div>
+        </section>
+
+        <section class="section case-next-section" aria-label="Read another case study">
+          <div class="section-heading">
+            <p class="eyebrow">Next Case Studies</p>
+            <h2>Continue reviewing related product work.</h2>
+          </div>
+          <div class="work-category-heading">
+            <h3>Product Design</h3>
+            <p>Enterprise UX case studies shaped around clarity, scale, and business impact.</p>
+          </div>
+          <div class="card-grid work-grid">
+            <article class="card project-card">
+              <a href="watchtower.html" aria-label="Open Watchtower case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>Watchtower executive fraud analytics</h3>
+                <p>See how I designed an executive dashboard that translated complex fraud data into strategic business insight.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="idcomply.html" aria-label="Open IDComply case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>IDComply global identity verification platform</h3>
+                <p>See how I helped define and scale a cross-platform identity verification product across web, Android, iOS, and operational systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="ux-rocket.html" aria-label="Open UX Rocket case study">
+                <div class="project-meta">AI Product</div>
+                <h3>UX Rocket</h3>
+                <p>Explore an AI-powered UX intelligence platform for session replay analysis and automated UX reporting.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card card">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in AI-powered DesignOps workflows?</h2>
+            <p>Open to Senior Product Designer, UX Designer, and Design System opportunities.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:thachdang1608@gmail.com">thachdang1608@gmail.com</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Design System Case Study | Thach Dang Van</title>
+    <meta
+      name="description"
+      content="GC Design System portfolio case study by Thach Dang Van. Scaling product consistency, design system governance, Storybook integration, and cross-platform UX standards across GeoComply."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="fi-bs-magic-wand.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell case-shell ds-case-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html#top">
+          <span class="brand-mark">TD</span>
+          <span class="brand-text">Thach Dang Van</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="case-hero section ds-hero">
+          <div class="case-hero-copy">
+            <a class="back-link" href="index.html#work">Back to selected work</a>
+            <p class="eyebrow">GeoComply | Enterprise design system</p>
+            <h1>GC Design System</h1>
+            <p class="case-lead">
+              Scaling product consistency across GeoComply by creating a shared framework for
+              foundations, components, UX standards, documentation, engineering implementation,
+              and long-term governance.
+            </p>
+          </div>
+          <aside class="case-summary card">
+            <dl>
+              <div>
+                <dt>Project</dt>
+                <dd>GC Design System - Scaling Product Consistency Across GeoComply</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Design System Lead</dd>
+              </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>Approximately 1 year</dd>
+              </div>
+              <div>
+                <dt>Platforms</dt>
+                <dd>Web, iOS, Android, internal tools, Storybook, GitHub, Figma</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="case-visual ds-system-visual card" aria-label="GC Design System visual model">
+          <div class="ds-orbit-visual">
+            <div class="ds-orbit-core">
+              <span>GC</span>
+              <strong>Design System</strong>
+              <small>Shared product language</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-foundation">
+              <span>01</span>
+              <strong>Foundations</strong>
+              <small>Tokens, color, type, spacing</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-components">
+              <span>02</span>
+              <strong>Components</strong>
+              <small>Reusable UI building blocks</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-standards">
+              <span>03</span>
+              <strong>UX Standards</strong>
+              <small>Interaction and workflow rules</small>
+            </div>
+            <div class="ds-orbit-card ds-orbit-card-docs">
+              <span>04</span>
+              <strong>Documentation</strong>
+              <small>Usage, behavior, specs</small>
+            </div>
+          </div>
+        </section>
+
+        <nav class="case-jump-nav" aria-label="GC Design System case study sections">
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#role">Role</a>
+          <a href="#research">Research</a>
+          <a href="#strategy">Strategy</a>
+          <a href="#principles">Principles</a>
+          <a href="#engineering">Engineering</a>
+          <a href="#governance">Governance</a>
+          <a href="#impact">Impact</a>
+          <a href="#reflection">Reflection</a>
+        </nav>
+
+        <section class="section recruiter-snapshot" aria-label="Design system case study highlights">
+          <div class="section-heading">
+            <p class="eyebrow">Case Study Highlights</p>
+            <h2>What this project shows about my design leadership.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>01</span>
+              <h3>System strategy</h3>
+              <p>Defined the direction, architecture, roadmap, and governance model for a company-wide design system.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>02</span>
+              <h3>Enterprise scale</h3>
+              <p>Supported multiple products, frontend stacks, platforms, legacy constraints, and future product expansion.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>03</span>
+              <h3>Technical collaboration</h3>
+              <p>Worked with frontend teams on Storybook, GitHub repositories, token feasibility, and implementation workflows.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>04</span>
+              <h3>Product consistency</h3>
+              <p>Created a stronger unified product identity and reduced duplicated design and development effort.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="overview">
+          <article class="case-block card">
+            <p class="eyebrow">Overview</p>
+            <h2>A shared framework for product consistency.</h2>
+            <p>
+              GeoComply had multiple enterprise products across web, iOS, Android, and internal
+              platforms. Over time, each product developed its own UI, UX logic, component approach,
+              and interaction behavior.
+            </p>
+            <p>
+              The goal was to create a unified Design System that could standardize product experience
+              across existing and future GeoComply products.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Strategic Scope</p>
+            <h2>More than a component library.</h2>
+            <p>
+              This was not only a UI library. It became a shared framework for design, engineering,
+              documentation, governance, and product scalability.
+            </p>
+            <ul class="detail-list">
+              <li>Unified foundations and reusable components.</li>
+              <li>Cross-product UX standards and interaction rules.</li>
+              <li>Shared documentation for design and engineering.</li>
+              <li>Governance workflows for contribution and release.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section split-section" id="problem">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Business Context</p>
+            <h2>A growing product ecosystem was becoming harder to scale consistently.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              GeoComply's product ecosystem had grown across multiple teams, technologies, and product
+              lines. Products were built with different stacks, including React, Golang, PHP, Node.js,
+              iOS, Android, and web platforms.
+            </p>
+            <p>
+              Some products had dedicated design support, while others were built mainly by engineering
+              teams using available libraries. This created a fragmented customer experience and made it
+              harder for users to recognize products as part of one GeoComply ecosystem.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">The Problem</p>
+            <h2>Fragmentation was reducing trust, maturity, and delivery efficiency.</h2>
+          </div>
+          <div class="ds-problem-grid">
+            <article class="card ds-problem-card">
+              <span>UI</span>
+              <h3>Inconsistent product language</h3>
+              <p>Products had different visual systems, interaction behaviors, and product identity cues.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>UX</span>
+              <h3>Duplicated design decisions</h3>
+              <p>Teams repeatedly solved similar flows, form patterns, navigation models, and edge cases.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>ENG</span>
+              <h3>Different component libraries</h3>
+              <p>Multiple stacks and libraries made reuse difficult and increased implementation drift.</p>
+            </article>
+            <article class="card ds-problem-card">
+              <span>A11Y</span>
+              <h3>Limited shared standards</h3>
+              <p>Accessibility, usability, and responsive behavior needed clearer system-level guidance.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="role">
+          <article class="case-block card">
+            <p class="eyebrow">My Role</p>
+            <h2>I was selected as the Design System Lead.</h2>
+            <p>
+              I led the strategy, planning, architecture, review process, and cross-functional alignment
+              needed to move the system from concept into Figma, Storybook, GitHub, and product adoption.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Responsibilities</p>
+            <ul class="detail-list">
+              <li>Defined the Design System strategy and direction.</li>
+              <li>Planned the roadmap and execution process.</li>
+              <li>Led research, audit, and system architecture.</li>
+              <li>Coordinated designers and frontend engineers.</li>
+              <li>Established foundations, standards, and governance.</li>
+              <li>Reviewed components, patterns, and documentation.</li>
+              <li>Supported implementation into Storybook and GitHub repositories.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="research">
+          <div class="section-heading">
+            <p class="eyebrow">Research & Discovery</p>
+            <h2>Understanding how to build for enterprise scale before defining the system.</h2>
+          </div>
+          <div class="ds-research-grid">
+            <article class="card case-card">
+              <h3>External research</h3>
+              <p>Studied mature design system models, component methodologies, token structures, accessibility standards, documentation models, and enterprise UX patterns.</p>
+            </article>
+            <article class="card case-card">
+              <h3>Product audit</h3>
+              <p>Reviewed existing UI components, interaction patterns, duplicated solutions, accessibility gaps, legacy products, and technical constraints across products.</p>
+            </article>
+            <article class="card case-card">
+              <h3>System decisions</h3>
+              <p>Used the audit to decide what to standardize, what to rebuild, and what to keep flexible for product-specific needs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="strategy">
+          <div class="section-heading">
+            <p class="eyebrow">Design System Strategy</p>
+            <h2>The system was structured around four connected layers.</h2>
+          </div>
+          <div class="ds-layer-grid">
+            <article class="card ds-layer-card">
+              <span>01</span>
+              <h3>Foundations</h3>
+              <p>Color, typography, spacing, grid, elevation, iconography, motion, and responsive behavior.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>02</span>
+              <h3>Components</h3>
+              <p>Atomic components, form controls, navigation, data display, feedback, and complex enterprise UI patterns.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>03</span>
+              <h3>UX Standards</h3>
+              <p>Shared onboarding logic, interaction behavior, reusable workflow patterns, accessibility, and platform consistency rules.</p>
+            </article>
+            <article class="card ds-layer-card">
+              <span>04</span>
+              <h3>Documentation</h3>
+              <p>Component usage, behavior rules, edge cases, design rationale, technical specifications, and implementation notes.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="principles">
+          <div class="section-heading">
+            <p class="eyebrow">GeoComply Design Principles</p>
+            <h2>Shared product standards for trusted enterprise experiences.</h2>
+          </div>
+          <div class="ds-principles-grid">
+            <article class="card ds-principle-card">
+              <span>01</span>
+              <h3>Trust Through Clarity</h3>
+              <p>Design interfaces that make risk, actions, and decisions understandable instantly.</p>
+              <ul class="detail-list">
+                <li>Reduce ambiguity.</li>
+                <li>Surface critical information clearly.</li>
+                <li>Prioritize readability over decoration.</li>
+                <li>Make system status visible.</li>
+                <li>Create confidence through consistency.</li>
+              </ul>
+              <p class="ds-principle-keywords">Trustworthy · Clear · Predictable · Transparent</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>02</span>
+              <h3>Precision at Scale</h3>
+              <p>Build systems that remain reliable across massive workflows, datasets, and enterprise products.</p>
+              <ul class="detail-list">
+                <li>Design reusable systems, not isolated screens.</li>
+                <li>Prioritize scalability from the beginning.</li>
+                <li>Support high-density enterprise workflows.</li>
+                <li>Optimize for speed and accuracy.</li>
+                <li>Build modular foundations.</li>
+              </ul>
+              <p class="ds-principle-keywords">Precise · Systematic · Scalable · Efficient</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>03</span>
+              <h3>Reduce Friction</h3>
+              <p>Security should protect users without slowing them down.</p>
+              <ul class="detail-list">
+                <li>Simplify critical workflows.</li>
+                <li>Remove unnecessary steps.</li>
+                <li>Reduce cognitive load.</li>
+                <li>Balance security with usability.</li>
+                <li>Design invisible complexity.</li>
+              </ul>
+              <p class="ds-principle-keywords">Effortless · Fast · Focused · Seamless</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>04</span>
+              <h3>Consistency Builds Confidence</h3>
+              <p>Unified experiences strengthen product trust and usability.</p>
+              <ul class="detail-list">
+                <li>Reuse patterns consistently.</li>
+                <li>Standardize interactions.</li>
+                <li>Align behaviors across products.</li>
+                <li>Create predictable UI logic.</li>
+                <li>Ensure cross-platform consistency.</li>
+              </ul>
+              <p class="ds-principle-keywords">Unified · Familiar · Cohesive · Reliable</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>05</span>
+              <h3>Designed for Real Operations</h3>
+              <p>Support real-world enterprise workflows, not idealized scenarios.</p>
+              <ul class="detail-list">
+                <li>Prioritize operational efficiency.</li>
+                <li>Design for edge cases.</li>
+                <li>Support rapid decision-making.</li>
+                <li>Enable high information density.</li>
+                <li>Build resilient workflows.</li>
+              </ul>
+              <p class="ds-principle-keywords">Operational · Practical · Resilient · Functional</p>
+            </article>
+            <article class="card ds-principle-card">
+              <span>06</span>
+              <h3>Accessibility is Non-Negotiable</h3>
+              <p>Inclusive experiences create stronger products for everyone.</p>
+              <ul class="detail-list">
+                <li>Maintain strong contrast and readability.</li>
+                <li>Support keyboard accessibility.</li>
+                <li>Design accessible interaction states.</li>
+                <li>Use semantic structure consistently.</li>
+                <li>Ensure scalable typography and spacing.</li>
+              </ul>
+              <p class="ds-principle-keywords">Inclusive · Readable · Accessible · Universal</p>
+            </article>
+            <article class="card ds-principle-card ds-principle-card-wide">
+              <span>07</span>
+              <h3>Collaborate Through Systems</h3>
+              <p>Design systems are shared operational tools between Design and Engineering.</p>
+              <ul class="detail-list">
+                <li>Build shared foundations.</li>
+                <li>Align design and code.</li>
+                <li>Support reusable implementation.</li>
+                <li>Document behaviors clearly.</li>
+                <li>Automate where possible.</li>
+              </ul>
+              <p class="ds-principle-keywords">Collaborative · Modular · Maintainable · Connected</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Cross-Platform Thinking</p>
+            <h2>Reusable principles mattered more than static components.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              The system needed to support web applications, iOS, Android, responsive layouts,
+              legacy products, future products, and multiple frontend technologies. Because of this,
+              we designed around shared principles, reusable logic, scalable behaviors, and consistent
+              product patterns.
+            </p>
+            <div class="role-chip-grid">
+              <span>Web apps</span>
+              <span>iOS</span>
+              <span>Android</span>
+              <span>Responsive UI</span>
+              <span>Legacy products</span>
+              <span>Future products</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="engineering">
+          <div class="section-heading">
+            <p class="eyebrow">Engineering Collaboration</p>
+            <h2>Design decisions were shaped with implementation reality in mind.</h2>
+          </div>
+          <article class="card ds-implementation-card">
+            <div>
+              <h3>Technical discovery with frontend teams</h3>
+              <p>
+                We held technical discovery sessions to understand existing frontend architecture,
+                current component libraries, technology constraints, Storybook structure, GitHub
+                repositories, design token feasibility, and which parts could be automated.
+              </p>
+            </div>
+            <div class="ds-stack-map" aria-label="Design system implementation flow">
+              <span>Figma</span>
+              <span>Tokens</span>
+              <span>Storybook</span>
+              <span>GitHub</span>
+              <span>Products</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="section" id="governance">
+          <div class="section-heading">
+            <p class="eyebrow">Workflow & Governance</p>
+            <h2>A contribution model helped reduce inconsistency across decisions.</h2>
+          </div>
+          <div class="ds-timeline card">
+            <ol>
+              <li><span>01</span>Research and audit</li>
+              <li><span>02</span>Design exploration</li>
+              <li><span>03</span>Internal design review</li>
+              <li><span>04</span>Feedback from Designers, PMs, Managers, Engineers, and Frontend teams</li>
+              <li><span>05</span>Iteration and refinement</li>
+              <li><span>06</span>Final approval</li>
+              <li><span>07</span>Development handoff</li>
+              <li><span>08</span>Storybook implementation</li>
+              <li><span>09</span>GitHub release</li>
+              <li><span>10</span>Continuous maintenance</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section case-section-grid">
+          <article class="case-block card">
+            <p class="eyebrow">Automation & Integration</p>
+            <h2>The system evolved beyond Figma.</h2>
+            <p>
+              The team built a complete Figma Design System, Storybook integration, GitHub component
+              repositories, token-based workflows, and internal automation tools.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Workflow Improvements</p>
+            <ul class="detail-list">
+              <li>Figma-to-Storybook synchronization.</li>
+              <li>Variable and token updates.</li>
+              <li>Documentation generation.</li>
+              <li>Publishing updates to GitHub repositories.</li>
+              <li>More efficient long-term maintenance.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section split-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Challenges</p>
+            <h2>Standardization had to work inside real product delivery constraints.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              The project had multiple technology stacks, legacy systems with inconsistent quality,
+              different product priorities, resource changes during development, and high-priority
+              product deadlines competing with Design System work.
+            </p>
+            <p>
+              The key challenge was balancing system standardization with real product delivery constraints.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="impact">
+          <div class="section-heading">
+            <p class="eyebrow">Outcome & Impact</p>
+            <h2>A foundational platform initiative for GeoComply's product ecosystem.</h2>
+          </div>
+          <div class="ds-impact-grid">
+            <article class="metric-card card">
+              <strong>Figma</strong>
+              <span>Fully implemented Design System library</span>
+            </article>
+            <article class="metric-card card">
+              <strong>Storybook</strong>
+              <span>Integrated engineering component documentation</span>
+            </article>
+            <article class="metric-card card">
+              <strong>GitHub</strong>
+              <span>Connected component repositories and release workflows</span>
+            </article>
+          </div>
+          <div class="case-section-grid ds-impact-list">
+            <article class="case-block card">
+              <h3>Product impact</h3>
+              <ul class="detail-list">
+                <li>Improved visual consistency across GeoComply products.</li>
+                <li>Created a stronger unified product identity.</li>
+                <li>Improved UX consistency and usability.</li>
+                <li>Created reusable architecture for future products.</li>
+              </ul>
+            </article>
+            <article class="case-block card">
+              <h3>Team impact</h3>
+              <ul class="detail-list">
+                <li>Reduced duplicated design and development work.</li>
+                <li>Accelerated design and engineering workflows.</li>
+                <li>Improved collaboration between Design and Engineering.</li>
+                <li>Improved long-term product maintainability.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split-section" id="reflection">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Reflection</p>
+            <h2>A design system succeeds when it becomes a product operating model.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              This project strengthened my experience in leading Design Systems at enterprise scale.
+              The most important lesson was that a successful Design System is not only about components.
+              It requires strategy, governance, technical collaboration, documentation, adoption, and
+              continuous improvement.
+            </p>
+            <p>
+              For GeoComply, the Design System helped shift product design from fragmented execution
+              toward a more scalable, consistent, and platform-level design approach.
+            </p>
+          </div>
+        </section>
+
+        <section class="section case-next-section" aria-label="Read another case study">
+          <div class="section-heading">
+            <p class="eyebrow">Next Case Studies</p>
+            <h2>Continue reviewing related product work.</h2>
+          </div>
+          <div class="work-category-heading">
+            <h3>Product Design</h3>
+            <p>Enterprise UX case studies shaped around clarity, scale, and business impact.</p>
+          </div>
+          <div class="card-grid work-grid">
+            <article class="card project-card">
+              <a href="watchtower.html" aria-label="Open Watchtower case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>Watchtower executive fraud analytics</h3>
+                <p>See how I designed an executive dashboard that translated complex fraud data into strategic business insight.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="idcomply.html" aria-label="Open IDComply case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>IDComply global identity verification platform</h3>
+                <p>See how I helped define and scale a cross-platform identity verification product across web, Android, iOS, and operational systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="gc-design-system.html" aria-label="Open GC Design System case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>GC Design System</h3>
+                <p>See how I led design system strategy, governance, documentation, and implementation alignment across GeoComply products.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+          <div class="work-category-heading work-category-heading-spaced">
+            <h3>Design Engineering with AI</h3>
+            <p>Practical AI workflows that connect design, documentation, and implementation.</p>
+          </div>
+          <div class="card-grid ai-work-grid">
+            <article class="card project-card">
+              <a href="chromaops.html" aria-label="Open ChromaOps case study">
+                <div class="project-meta">AI Product</div>
+                <h3>ChromaOps</h3>
+                <p>An AI-powered DesignOps platform for generating color foundations, validating accessibility, creating tokens, and producing implementation-ready documentation.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="radius-engine.html" aria-label="Open Radius Engine case study">
+                <div class="project-meta">AI Product</div>
+                <h3>Radius Engine</h3>
+                <p>An AI-powered geometry utility for calculating, validating, visualizing, and exporting scalable radius systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card card">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in how I scale product systems?</h2>
+            <p>Open to Senior Product Designer, UX Designer, and Design System opportunities.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:thachdang1608@gmail.com">thachdang1608@gmail.com</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

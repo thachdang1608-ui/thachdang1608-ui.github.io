@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Sherlock" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 160 160">
+  <!-- Generator: Adobe Illustrator 29.6.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 207)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #0042f6;
+        stroke-width: 1.3px;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        opacity: .7;
+      }
+
+      .st1, .st2, .st3 {
+        fill: #0042f6;
+        stroke: #fff;
+        stroke-width: .8px;
+      }
+
+      .st3 {
+        opacity: .4;
+      }
+    </style>
+  </defs>
+  <rect class="st3" x="7.5" y="103.6" width="48.2" height="48.2"/>
+  <rect class="st3" x="55.8" y="103.6" width="48.2" height="48.2"/>
+  <rect class="st2" x="104" y="103.6" width="48.2" height="48.2"/>
+  <rect class="st2" x="7.5" y="55.3" width="48.2" height="48.2"/>
+  <rect class="st3" x="55.8" y="55.3" width="48.2" height="48.2"/>
+  <rect class="st1" x="55.8" y="7.1" width="48.2" height="48.2"/>
+  <g>
+    <g>
+      <path class="st0" d="M37.5,39.5v-1.4c0-2.6-2.7-4.7-6.1-4.7s-6.1,2.1-6.1,4.7v1.4"/>
+      <path class="st0" d="M31.4,30.8c2.2,0,3.9-1.8,3.9-3.9s-1.8-3.9-3.9-3.9-3.9,1.8-3.9,3.9,1.8,3.9,3.9,3.9Z"/>
+    </g>
+    <polyline class="st0" points="36.6 19.1 43.7 19.1 43.7 26.2"/>
+    <polyline class="st0" points="19.6 26.2 19.6 19.1 26.7 19.1"/>
+    <polyline class="st0" points="26.7 43.3 19.6 43.3 19.6 36.2"/>
+    <polyline class="st0" points="43.7 36.2 43.7 43.3 36.6 43.3"/>
+  </g>
+  <g>
+    <path class="st0" d="M22,117.2h19.3v9.1c0,10-9.6,13.5-9.6,13.5,0,0-9.7-3.5-9.7-13.6v-9Z"/>
+    <polyline class="st0" points="27.3 124.6 31.6 130.1 41.2 117.2"/>
+  </g>
+  <path class="st0" d="M128.7,64.6l3.4,7.9c.6,1.4,1.7,2.4,3,3l7.9,3.4c.5.2.5.9,0,1.1l-7.9,3.4c-1.4.6-2.4,1.7-3,3l-3.4,7.9c-.2.5-.9.5-1.1,0l-3.4-7.9c-.6-1.4-1.7-2.4-3-3l-7.9-3.4c-.5-.2-.5-.9,0-1.1l7.9-3.4c1.4-.6,2.4-1.7,3-3l3.4-7.9c.2-.5.9-.5,1.1,0Z"/>
+</svg>

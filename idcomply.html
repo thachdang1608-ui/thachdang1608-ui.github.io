@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDComply Case Study | Thach Dang Van</title>
+    <meta
+      name="description"
+      content="IDComply portfolio case study by Thach Dang Van. Building and scaling a global identity verification platform across web, Android, and iOS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="fi-bs-magic-wand.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell case-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html#top">
+          <span class="brand-mark">TD</span>
+          <span class="brand-text">Thach Dang Van</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="case-hero section">
+          <div class="case-hero-copy">
+            <a class="back-link" href="index.html#work">Back to selected work</a>
+            <p class="eyebrow">GeoComply | Identity verification platform</p>
+            <h1>IDComply</h1>
+            <p class="case-lead">
+              Building and scaling a global identity verification platform from an ambiguous
+              product idea into a unified onboarding ecosystem across Web, Android, and iOS.
+            </p>
+            <div class="hero-actions case-actions">
+              <a class="button button-primary" href="https://www.geocomply.com/anti-fraud-and-geolocation-solutions/idcomply/" target="_blank" rel="noreferrer">View GeoComply page</a>
+            </div>
+          </div>
+          <aside class="case-summary card">
+            <dl>
+              <div>
+                <dt>Project</dt>
+                <dd>IDComply - Global identity verification and fraud prevention platform</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Senior Product Designer</dd>
+              </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>2021 - 2026</dd>
+              </div>
+              <div>
+                <dt>Platforms</dt>
+                <dd>Web, Android, iOS, Admin systems</dd>
+              </div>
+              <div>
+                <dt>Markets</dt>
+                <dd>US, UK, Europe, Brazil, Mexico</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="case-visual idcomply-system-visual card" aria-label="IDComply identity verification ecosystem visual">
+          <div class="idc-flow-visual">
+            <div class="idc-flow-panel idc-flow-intake">
+              <span>01</span>
+              <strong>User Intake</strong>
+              <small>Name, DOB, address, SSN, phone, email</small>
+            </div>
+            <div class="idc-flow-panel idc-flow-checks">
+              <span>02</span>
+              <strong>Verification Checks</strong>
+              <small>KYC, KBA, ID + selfie, document capture</small>
+            </div>
+            <div class="idc-flow-panel idc-flow-risk">
+              <span>03</span>
+              <strong>Risk Decisioning</strong>
+              <small>Fraud signals, sanctions, geolocation, fallback logic</small>
+            </div>
+            <div class="idc-flow-panel idc-flow-outcome">
+              <span>04</span>
+              <strong>Outcome & Ops</strong>
+              <small>Pass, partial, fail, review, admin workflows</small>
+            </div>
+            <div class="idc-flow-device" aria-hidden="true">
+              <div class="idc-device-topbar"></div>
+              <div class="idc-device-avatar">ID</div>
+              <div class="idc-device-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="idc-device-status">Verification in progress</div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="case-jump-nav" aria-label="IDComply case study sections">
+          <a href="#overview">Overview</a>
+          <a href="#challenge">Challenge</a>
+          <a href="#phase-one">Phase 1</a>
+          <a href="#phase-two">Phase 2</a>
+          <a href="#process">Process</a>
+          <a href="#outcome">Outcome</a>
+          <a href="#reflection">Reflection</a>
+        </nav>
+
+        <section class="section recruiter-snapshot" aria-label="IDComply quick scan summary">
+          <div class="section-heading">
+            <p class="eyebrow">Case Study Highlights</p>
+            <h2>What this project shows about my product design practice.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>01</span>
+              <h3>0-to-1 product definition</h3>
+              <p>I helped turn fragmented requirements and ambiguous product direction into the first working version of IDComply.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>02</span>
+              <h3>Cross-platform systems thinking</h3>
+              <p>I audited and unified onboarding experiences across Android, iOS, Web, and operational systems.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>03</span>
+              <h3>Enterprise collaboration</h3>
+              <p>I worked closely with PMs, engineers, QA, operational stakeholders, and compliance-driven teams.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>04</span>
+              <h3>Global scalability</h3>
+              <p>The platform expanded from the US into UK, Europe, Brazil, and Mexico with a more scalable UX foundation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="overview">
+          <article class="case-block card">
+            <p class="eyebrow">Overview</p>
+            <h2>An identity verification platform for regulated markets.</h2>
+            <p>
+              IDComply is an enterprise identity verification and fraud prevention platform designed
+              to help businesses streamline onboarding, reduce fraud risk, and improve compliance
+              workflows across regulated markets.
+            </p>
+            <p>
+              The platform combines identity verification, KYC/AML workflows, device intelligence,
+              fraud signals, geolocation verification, and operational monitoring into a unified
+              onboarding and operational ecosystem.
+            </p>
+          </article>
+
+          <article class="case-block card">
+            <p class="eyebrow">My Contribution</p>
+            <h2>I contributed across two major product phases.</h2>
+            <ul class="detail-list">
+              <li>Defined and designed the first version of the product from ambiguity.</li>
+              <li>Led the unification and scaling of the platform across Android, iOS, and Web ecosystems.</li>
+              <li>Structured onboarding workflows, verification states, and operational product patterns.</li>
+              <li>Supported implementation through documentation, design QA, and developer collaboration.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Product Ecosystem</p>
+            <h2>The platform brought multiple verification signals into one operational flow.</h2>
+          </div>
+          <div class="idcomply-capability-grid">
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/id-verification.png" alt="Identity verification icon" />
+              <h3>Identity verification</h3>
+              <p>Verify identity by comparing personal details such as date of birth, address, name, and SSN against authoritative sources.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/phone-verification.png" alt="Phone number verification icon" />
+              <h3>Phone number verification</h3>
+              <p>Validate personal details with mobile carriers and screen the number for any prior fraudulent activity.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/Artboard-1-copy-73@2x.webp" alt="Email insights icon" />
+              <h3>Email insights</h3>
+              <p>Verify and validate any email address within one request.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/kyc-aml-compliance.png" alt="KYC and AML compliance icon" />
+              <h3>KYC/AML compliance</h3>
+              <p>Monitor risk in real time, including PEP, OFAC, HIO, sanctions lists, and criminal records.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/identity-theft.png" alt="Fraud prevention icon" />
+              <h3>Fraud prevention</h3>
+              <p>Prevent fraudulent activity such as multi-accounting, bonus abuse, identity theft, account takeover, and more.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/id-selfie-verification.png" alt="ID and selfie verification icon" />
+              <h3>ID + selfie verification</h3>
+              <p>Automatically verify high-risk customers with photo ID and selfie checks in a snap.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/knowledge-based-authentication.png" alt="Knowledge-based authentication icon" />
+              <h3>Knowledge-based authentication (KBA)</h3>
+              <p>Verify users with out-of-wallet questions pulled from their official credit records. KBA is only required in some U.S. states.</p>
+            </article>
+            <article class="card idcomply-capability-card">
+              <img src="assets/idcomply/geometrics.png" alt="Core for Authentication icon" />
+              <h3>Core for Authentication</h3>
+              <p>CfA is a frictionless authentication solution that fulfills enhanced KYC requirements and prevents fraud early using advanced geolocation technology and gaming insights.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="challenge">
+          <div class="section-heading">
+            <p class="eyebrow">Business Context</p>
+            <h2>GeoComply needed a scalable identity verification ecosystem.</h2>
+          </div>
+          <div class="case-section-grid idcomply-business-grid">
+            <article class="case-block card">
+              <h3>The business need</h3>
+              <p>
+                GeoComply needed a product that could support multiple markets, multiple verification
+                methods, enterprise onboarding workflows, fraud prevention operations, and global
+                compliance requirements.
+              </p>
+              <p>
+                The product also needed to improve onboarding conversion, reduce operational friction,
+                provide better mobile experiences, and scale into new international markets.
+              </p>
+            </article>
+            <article class="case-block card">
+              <h3>The UX challenge</h3>
+              <p>
+                Identity verification is not a simple linear onboarding form. It is a complex ecosystem
+                of verification methods, risk signals, fraud detection logic, operational review flows,
+                regional compliance requirements, platform limitations, edge cases, and fallback scenarios.
+              </p>
+              <p>
+                One of the biggest challenges was designing a system that could remain understandable
+                for end users, efficient for operational teams, scalable for implementation teams, and
+                flexible for different markets and clients.
+              </p>
+              <p>The platform supported multiple environments:</p>
+              <ul class="detail-list">
+                <li>iOS applications.</li>
+                <li>Android applications.</li>
+                <li>Multiple browser experiences.</li>
+                <li>Internal operational and admin systems.</li>
+              </ul>
+              <p>IDComply also contained many onboarding flows and verification scenarios:</p>
+              <ul class="detail-list">
+                <li>KYC, KBA, and IDPV.</li>
+                <li>Document capture flows.</li>
+                <li>Multi-step and partial verification experiences.</li>
+                <li>Risk-based onboarding paths.</li>
+              </ul>
+              <p>
+                Each flow had different business logic, technical constraints, UX requirements, and
+                regulatory considerations. Another major challenge was maintaining cross-platform
+                consistency, shared onboarding logic, unified content structure, and standardized
+                interaction behaviors while still respecting native mobile behaviors, responsive
+                requirements, browser limitations, and market-specific compliance rules.
+              </p>
+              <p>
+                The system also needed to support responsive layouts, reusable onboarding patterns,
+                scalable architecture, modular verification methods, and future onboarding expansion.
+              </p>
+              <p>
+                The core UX challenge was transforming a fragmented and highly technical verification
+                ecosystem into a unified, scalable, and production-ready experience across platforms,
+                markets, and operational scenarios.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split-section" id="phase-one">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Phase 1</p>
+            <h2>Building the first version from ambiguity.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              When the project started, there was no clear workflow, no unified onboarding structure,
+              no finalized product direction, and no shared understanding of how the system should work.
+              Requirements came from business stakeholders, PMs, engineering teams, compliance needs,
+              and operational workflows.
+            </p>
+            <p>
+              My role extended beyond traditional UI/UX. I acted as a product designer, UX strategist,
+              workflow architect, and partial product manager. I gathered requirements, organized
+              discussions, wrote product documentation, synthesized constraints, and helped define the
+              initial product behavior.
+            </p>
+            <ul class="detail-list">
+              <li>Gathered and synthesized fragmented requirements.</li>
+              <li>Mapped onboarding journeys, edge cases, and verification logic.</li>
+              <li>Translated technical workflows into user-facing experiences.</li>
+              <li>Created the first design direction and MVP product structure.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <article class="screen-shot card screen-shot-large idcomply-structure-visual">
+            <img src="assets/idcomply/Structures.png" alt="IDComply platform structure diagram" />
+            <div>
+              <h3>Platform structure</h3>
+              <p>
+                I created the platform structure to define what needed to be designed for the
+                IDComply identity platform, including onboarding flows, verification methods,
+                operational tools, risk signals, compliance requirements, and cross-platform touchpoints.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Verification Logic</p>
+            <h2>Waterfall logic helped turn complex checks into a guided onboarding system.</h2>
+          </div>
+          <article class="screen-shot card screen-shot-large idcomply-process-visual">
+            <img src="assets/idcomply/waterfall-process.svg" alt="IDComply waterfall verification process" />
+            <div>
+              <h3>Waterfall verification process</h3>
+              <p>
+                The product needed to support multiple verification paths depending on user data,
+                regional requirements, risk signals, and fallback scenarios. Mapping this logic helped
+                the team align product behavior before final interface design.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section case-section-grid">
+          <article class="case-block card">
+            <p class="eyebrow">Discovery & Definition</p>
+            <h2>The work started by making the system visible.</h2>
+            <p>
+              I worked closely with teams to understand verification logic, fraud review flows,
+              operational workflows, compliance requirements, and user onboarding edge cases. The goal
+              was not only to design screens, but to help define how the product should function.
+            </p>
+            <ul class="detail-list">
+              <li>Stakeholder workshops and alignment discussions.</li>
+              <li>Workflow analysis and technical dependency mapping.</li>
+              <li>Requirement gathering and product documentation.</li>
+              <li>Operational flow and onboarding journey mapping.</li>
+            </ul>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">First MVP</p>
+            <h2>From abstract conversations to a usable platform.</h2>
+            <p>
+              After consolidating requirements and workflows, I designed the first product structure
+              and onboarding experience for IDComply. This included onboarding flows, verification
+              states, operational workflows, dashboard concepts, information hierarchy, risk visibility,
+              and system behaviors.
+            </p>
+            <p>
+              The first release established the product foundation, core onboarding architecture,
+              operational direction, and future scalability strategy.
+            </p>
+          </article>
+        </section>
+
+        <section class="section split-section" id="phase-two">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Phase 2</p>
+            <h2>Unifying the platform for global scaling.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              As IDComply evolved, the ecosystem became increasingly fragmented across Android, iOS,
+              browser applications, and internal operational systems. Each platform had different UI
+              patterns, content structures, interaction behaviors, onboarding flows, and verification
+              logic.
+            </p>
+            <p>
+              This created challenges for scalability, maintenance, user consistency, operational
+              efficiency, and product quality. The platform needed a unified onboarding and design
+              system capable of scaling globally.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="process">
+          <div class="section-heading">
+            <p class="eyebrow">Process</p>
+            <h2>Audit, unify, document, and validate across platforms.</h2>
+          </div>
+          <div class="ia-layer-grid">
+            <article class="card case-card ia-layer">
+              <span>Step 1</span>
+              <h3>Cross-platform UX audit</h3>
+              <p>I collected and compared Android, iOS, Web, onboarding states, operational scenarios, content inconsistencies, and edge cases.</p>
+            </article>
+            <article class="card case-card ia-layer">
+              <span>Step 2</span>
+              <h3>Unified strategy</h3>
+              <p>I proposed unified UX principles, content strategy, onboarding logic, shared behaviors, reusable patterns, and scalable architecture.</p>
+            </article>
+            <article class="card case-card ia-layer">
+              <span>Step 3</span>
+              <h3>Design system & QA</h3>
+              <p>I supported shared components, standardized patterns, design documentation, implementation validation, and cross-platform design QA.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid">
+          <article class="case-block card">
+            <p class="eyebrow">Unified Experience</p>
+            <h2>One coherent ecosystem instead of disconnected experiences.</h2>
+            <p>
+              The redesigned experience introduced unified onboarding flows, shared interaction
+              patterns, consistent verification states, scalable operational workflows, and reusable UI
+              structures.
+            </p>
+            <ul class="detail-list">
+              <li>Unified UX principles and content strategy.</li>
+              <li>Standardized onboarding logic and verification states.</li>
+              <li>Reusable UI structures and business logic.</li>
+              <li>Cross-platform consistency across Web, Android, and iOS.</li>
+            </ul>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">Collaboration</p>
+            <h2>Consistency required close cross-functional collaboration.</h2>
+            <p>
+              I regularly worked with Android engineers, iOS engineers, Web engineers, backend/admin
+              teams, PMs, QA teams, and operational stakeholders. Collaboration included workflow
+              reviews, alignment discussions, edge-case reviews, implementation validation, design QA,
+              and behavior consistency checks.
+            </p>
+          </article>
+        </section>
+
+        <section class="section" id="outcome">
+          <div class="section-heading">
+            <p class="eyebrow">Outcome & Global Expansion</p>
+            <h2>A unified platform foundation that supported international growth.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>01</span>
+              <h3>Product outcomes</h3>
+              <p>Unified onboarding across platforms, consistent UX patterns, improved scalability, better maintainability, and stronger design system consistency.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>02</span>
+              <h3>Business outcomes</h3>
+              <p>Expanded from the US into UK, Europe, Brazil, and Mexico while supporting onboarding optimization and enterprise customer adoption.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>03</span>
+              <h3>Operational outcomes</h3>
+              <p>Improved operational clarity, reduced inconsistency across platforms, and supported transitions from browser experiences to mobile apps.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>04</span>
+              <h3>Organizational outcomes</h3>
+              <p>Created a shared UX foundation, improved delivery consistency, and supported more scalable collaboration across teams.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Product Value</p>
+            <h2>The platform had to support customer growth and fraud prevention at the same time.</h2>
+          </div>
+          <div class="idcomply-value-grid">
+            <article class="card idcomply-value-card">
+              <img src="assets/idcomply/onboard-customers.svg" alt="Onboard customers illustration" />
+              <h3>Onboard customers</h3>
+              <p>Improve verification experiences so more legitimate customers could complete onboarding.</p>
+            </article>
+            <article class="card idcomply-value-card">
+              <img src="assets/idcomply/protect-profits.svg" alt="Protect profits illustration" />
+              <h3>Protect profits</h3>
+              <p>Reduce fraud exposure by connecting identity checks, risk signals, and operational review.</p>
+            </article>
+            <article class="card idcomply-value-card">
+              <img src="assets/idcomply/focus-costs.svg" alt="Focus costs illustration" />
+              <h3>Control operational cost</h3>
+              <p>Create clearer workflows that helped teams focus attention where risk was highest.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="reflection">
+          <article class="case-block card">
+            <p class="eyebrow">Reflection</p>
+            <h2>This project strengthened my systems-thinking practice.</h2>
+            <p>
+              IDComply reinforced how important it is to design enterprise products as systems, not
+              isolated screens. The work required balancing usability, compliance, operational
+              efficiency, technical constraints, and long-term business scalability.
+            </p>
+            <p>
+              One of the biggest lessons was learning how to transform highly fragmented enterprise
+              workflows into a unified, scalable, production-ready ecosystem that could support global
+              expansion.
+            </p>
+          </article>
+          <article class="case-block card">
+            <p class="eyebrow">What I Grew</p>
+            <h2>Enterprise UX, product strategy, and cross-platform leadership.</h2>
+            <ul class="detail-list">
+              <li>Enterprise UX and operational workflow design.</li>
+              <li>Cross-platform product design across Web, Android, and iOS.</li>
+              <li>Scalable onboarding architecture and verification-state systems.</li>
+              <li>Design systems, documentation, design QA, and implementation quality.</li>
+              <li>Cross-functional leadership across product, engineering, QA, and operations.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section case-next-section" aria-label="Read another case study">
+          <div class="section-heading">
+            <p class="eyebrow">Next Case Studies</p>
+            <h2>Continue reviewing related product work.</h2>
+          </div>
+          <div class="work-category-heading">
+            <h3>Product Design</h3>
+            <p>Enterprise UX case studies shaped around clarity, scale, and business impact.</p>
+          </div>
+          <div class="card-grid work-grid">
+            <article class="card project-card">
+              <a href="watchtower.html" aria-label="Open Watchtower case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>Watchtower executive fraud analytics</h3>
+                <p>See how I designed an executive dashboard that translated complex fraud data into strategic business insight.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="idcomply.html" aria-label="Open IDComply case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>IDComply global identity verification platform</h3>
+                <p>See how I helped define and scale a cross-platform identity verification product across web, Android, iOS, and operational systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="gc-design-system.html" aria-label="Open GC Design System case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>GC Design System</h3>
+                <p>See how I led design system strategy, governance, documentation, and implementation alignment across GeoComply products.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+          <div class="work-category-heading work-category-heading-spaced">
+            <h3>Design Engineering with AI</h3>
+            <p>Practical AI workflows that connect design, documentation, and implementation.</p>
+          </div>
+          <div class="card-grid ai-work-grid">
+            <article class="card project-card">
+              <a href="chromaops.html" aria-label="Open ChromaOps case study">
+                <div class="project-meta">AI Product</div>
+                <h3>ChromaOps</h3>
+                <p>An AI-powered DesignOps platform for generating color foundations, validating accessibility, creating tokens, and producing implementation-ready documentation.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="radius-engine.html" aria-label="Open Radius Engine case study">
+                <div class="project-meta">AI Product</div>
+                <h3>Radius Engine</h3>
+                <p>An AI-powered geometry utility for calculating, validating, visualizing, and exporting scalable radius systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card card">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in how I design scalable enterprise platforms?</h2>
+            <p>Open to Senior Product Designer, UX Designer, and Design System opportunities.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:thachdang1608@gmail.com">thachdang1608@gmail.com</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" href="tel:0984010197">Phone / Zalo: 0984010197</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

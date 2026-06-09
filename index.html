@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thach Dang Van | Senior UI/UX Designer</title>
+    <title>Thach Dang Van | Senior Product Designer</title>
     <meta
       name="description"
-      content="Portfolio of Thach Dang Van, Senior UI/UX Designer and Design System Leader specializing in enterprise products, scalable design systems, and AI-driven workflows."
+      content="Portfolio of Thach Dang Van, Senior Product Designer and Design System Lead specializing in enterprise products, scalable design systems, and AI-assisted workflows."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="fi-bs-magic-wand.svg" type="image/svg+xml" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -29,100 +35,148 @@
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
       </header>
 
       <main id="top">
         <section class="hero section">
           <div class="hero-copy">
-            <p class="eyebrow">Senior UI/UX Designer | Design System Leader</p>
-            <h1>
-              I design enterprise products that feel clear, scalable, and ready for the
-              AI era.
-            </h1>
+            <p class="eyebrow">Senior Product Designer | Design System Lead</p>
+            <h1>I turn complex enterprise workflows into clear product experiences.</h1>
             <p class="hero-text">
-              With 8+ years across global teams, I turn complex workflows into simple
-              product experiences, build reusable design systems, and use AI tooling to
-              speed up design-to-development delivery.
+              8+ years designing web and mobile products for SaaS and enterprise platforms.
+              I simplify complex workflows into intuitive experiences while balancing user needs,
+              business goals, technical constraints, and delivery timelines.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">View selected work</a>
-              <a class="button button-secondary" href="mailto:thachdang1608@gmail.com"
-                >Contact me</a
-              >
+              <a class="button button-primary" href="#work">View my work</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" a href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
-            <ul class="hero-links" aria-label="External profiles">
-              <li><a href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://www.behance.net/mrthach" target="_blank" rel="noreferrer">Behance</a></li>
-              <li><a href="mailto:thachdang1608@gmail.com">Email</a></li>
-            </ul>
+        
           </div>
           <aside class="hero-card" aria-label="Profile summary card">
+            <img class="profile-photo" src="assets/thach-dang-van.jpg" alt="Thach Dang Van" />
             <div class="hero-card-top">
               <span class="status-dot"></span>
-              <span>Available for senior product design roles</span>
+              <span>Available for Senior Product Design roles</span>
             </div>
             <div class="hero-card-grid">
               <article>
                 <strong>8+</strong>
-                <span>Years designing digital products</span>
+                <span>Years designing SaaS and enterprise products</span>
               </article>
               <article>
-                <strong>2</strong>
-                <span>Enterprise design systems built and scaled</span>
+                <strong>4</strong>
+                <span>Additional markets launched through KYC platform redesign</span>
               </article>
               <article>
-                <strong>40%</strong>
-                <span>Reduction in UI implementation errors</span>
+                <strong>10+</strong>
+                <span>Products aligned through a unified design system</span>
               </article>
               <article>
-                <strong>30%</strong>
-                <span>Efficiency increase through reusable components</span>
+                <strong>Top 5</strong>
+                <span>Finalist in company-wide AI innovation competition</span>
               </article>
             </div>
           </aside>
         </section>
 
-        <section class="proof-strip" aria-label="Key proof points">
-          <div>Enterprise UX</div>
-          <div>Design Systems</div>
-          <div>Cross-functional Leadership</div>
-          <div>AI Workflow Acceleration</div>
-          <div>Global Team Collaboration</div>
+    
+
+        <section class="section hiring-snapshot" aria-label="Hiring team snapshot">
+          <div class="section-heading">
+            <p class="eyebrow">Hiring Snapshot</p>
+            <h2>Fast signals for recruiters and hiring managers.</h2>
+          </div>
+          <div class="card-grid snapshot-grid">
+            <article class="card snapshot-card">
+              <span>01</span>
+              <h3>Best case study to review first</h3>
+              <p>Watchtower shows my enterprise dashboard UX, product thinking, stakeholder collaboration, and business-impact storytelling.</p>
+              <a class="card-link" href="watchtower.html">Open Watchtower</a>
+            </article>
+            <article class="card snapshot-card">
+              <span>02</span>
+              <h3>Where I am strongest</h3>
+              <p>Designing complex SaaS and enterprise products, simplifying multi-step workflows, building scalable design systems, and ensuring design quality from discovery through development.</p>
+            </article>
+            <article class="card snapshot-card">
+              <span>03</span>
+              <h3>How I work with teams</h3>
+              <p>I partner closely with PMs, engineers, QA, fraud teams, leadership, and global stakeholders from discovery through delivery.</p>
+            </article>
+            <article class="card snapshot-card">
+              <span>04</span>
+              <h3>What makes me current</h3>
+              <p>Beyond designing products, I build AI-powered workflows and internal tools that improve design efficiency, automate repetitive tasks, support UX analysis, and strengthen collaboration between Product, Design, and Engineering teams.</p>
+            </article>
+          </div>
         </section>
 
         <section class="section" id="work">
           <div class="section-heading">
             <p class="eyebrow">Selected work</p>
-            <h2>Case studies shaped around clarity, scale, and business impact.</h2>
+            <h2>Product design and design engineering with AI.</h2>
+          </div>
+          <div class="work-category-heading">
+            <h3>Product Design</h3>
+            <p>Enterprise UX case studies shaped around clarity, scale, and business impact.</p>
           </div>
           <div class="card-grid work-grid">
             <article class="card project-card project-card-wide">
-              <div class="project-meta">GeoComply</div>
-              <h3>Company-wide design system foundation</h3>
-              <p>
-                Started and led a unified design system across multiple enterprise
-                products, solving inconsistency, standardizing UI patterns, and creating
-                a stronger product brand.
-              </p>
-              <ul class="tags">
-                <li>Design Systems</li>
-                <li>Components</li>
-                <li>Design QA</li>
-              </ul>
+              <a href="watchtower.html" aria-label="Open Watchtower case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>Watchtower executive fraud analytics</h3>
+                <p>
+                  Designed a real-time fraud detection dashboard for executive users,
+                  helping GeoComply communicate ecosystem effectiveness for strategic
+                  enterprise client conversations.
+                </p>
+                <ul class="tags">
+                  <li>Enterprise UX</li>
+                  <li>Analytics</li>
+                  <li>Fraud Detection</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
             </article>
             <article class="card project-card">
-              <div class="project-meta">KYC Platform</div>
-              <h3>Cross-platform KYC redesign</h3>
-              <p>
-                Redesigned the KYC experience across native apps, mobile web, Android,
-                and iOS to align function and visual consistency, contributing to market
-                expansion and new customer growth.
-              </p>
-              <ul class="tags">
-                <li>Mobile UX</li>
-                <li>Consistency</li>
-                <li>Enterprise</li>
-              </ul>
+              <a href="idcomply.html" aria-label="Open IDComply case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>IDComply global identity verification platform</h3>
+                <p>
+                  Helped define the first version from ambiguity, then unified onboarding across
+                  Web, Android, and iOS to support global market expansion.
+                </p>
+                <ul class="tags">
+                  <li>0→1 Product</li>
+                  <li>Cross-platform UX</li>
+                  <li>KYC / Compliance</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="gc-design-system.html" aria-label="Open GC Design System case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>GC Design System</h3>
+                <p>
+                  Led a company-wide design system initiative to standardize foundations,
+                  components, UX standards, documentation, Storybook, and GitHub workflows
+                  across GeoComply products.
+                </p>
+                <ul class="tags">
+                  <li>Design Systems</li>
+                  <li>Governance</li>
+                  <li>Enterprise Scale</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
             </article>
             <article class="card project-card">
               <div class="project-meta">CMS Product</div>
@@ -153,25 +207,92 @@
               </ul>
             </article>
           </div>
+          <div class="work-category-heading work-category-heading-spaced">
+            <h3>Design Engineering with AI.</h3>
+            <p>Practical AI workflows that connect design, documentation, </br>and implementation.</p>
+          </div>
+          <div class="card-grid ai-work-grid">
+            <article class="card project-card project-card-wide">
+              <a href="chromaops.html" aria-label="Open ChromaOps case study">
+                <div class="project-meta">AI Product</div>
+                <h3>ChromaOps</h3>
+                <p>An AI-powered DesignOps platform for generating color foundations, validating accessibility, creating tokens, and producing implementation-ready documentation.</p>
+                <ul class="tags">
+                  <li>Google AI Studio</li>
+                  <li>DesignOps</li>
+                  <li>Design Tokens</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card ai-recognition-card">
+              <div class="project-meta">GeoComply AI Olympia</div>
+              <div class="recognition-metrics" aria-label="AI workflow recognition rankings">
+                <div>
+                  <strong>Top 3</strong>
+                  <span>Recent 3 months</span>
+                </div>
+                <div>
+                  <strong>Top 5</strong>
+                  <span>Overall ranking</span>
+                </div>
+              </div>
+              <h3>Recognized for AI workflow impact</h3>
+              <p>
+                Applied AI and automation to improve design workflows, documentation speed, and DesignOps productivity.
+              </p>
+              <ul class="tags">
+                <li>AI Tools</li>
+                <li>Productivity</li>
+                <li>Design Ops</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <a href="ux-rocket.html" aria-label="Open UX Rocket case study">
+                <div class="project-meta">AI Product</div>
+                <h3>UX Rocket</h3>
+                <p>An AI-powered UX intelligence platform that analyzes LogRocket sessions, event logs, and replay evidence to generate actionable product insights.</p>
+                <ul class="tags">
+                  <li>Session Replay</li>
+                  <li>AI Workflow</li>
+                  <li>UX Intelligence</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="radius-engine.html" aria-label="Open Radius Engine case study">
+                <div class="project-meta">AI Product</div>
+                <h3>Radius Engine</h3>
+                <p>An AI-powered geometry utility for calculating, validating, visualizing, and exporting scalable radius systems.</p>
+                <ul class="tags">
+                  <li>Design Utility</li>
+                  <li>UI Systems</li>
+                  <li>AI Studio</li>
+                </ul>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
         </section>
 
         <section class="section split-section" id="about">
           <div class="section-heading narrow">
             <p class="eyebrow">About</p>
-            <h2>Product design that simplifies complexity without losing rigor.</h2>
+            <h2>Designing scalable product experiences that balance user needs, business goals, and technical constraints.</h2>
           </div>
           <div class="about-copy card">
             <p>
-              I am a senior UI/UX designer focused on enterprise products, design
-              systems, and end-to-end product thinking. My work spans research,
-              workflows, interaction design, prototyping, developer handoff, and design
-              QA.
+              I am a Senior Product Designer with 8+ years of experience designing web and
+              mobile products for SaaS and enterprise platforms. My work spans product strategy,
+              user flows, wireframes, prototypes, responsive interfaces, developer handoff, and
+              design QA.
             </p>
             <p>
-              I have collaborated with teams across the US and EU, using async
-              communication and clear alignment to move projects forward. I also bring a
-              strong practical interest in AI and automation tools to make design work
-              faster, cleaner, and more connected across tools.
+              I work closely with Product Managers, Engineers, QA, marketers, and stakeholders
+              in Agile teams to shape product direction, improve usability, and deliver
+              high-quality products from discovery to implementation. I also use AI-assisted
+              workflows to improve design speed and collaboration.
             </p>
           </div>
         </section>
@@ -179,11 +300,11 @@
         <section class="section metrics-section">
           <div class="metric-card card">
             <strong>Millions</strong>
-            <span>Users impacted through enterprise UX initiatives</span>
+            <span>Users reached through identity verification and enterprise SaaS platforms</span>
           </div>
           <div class="metric-card card">
-            <strong>Top 5</strong>
-            <span>GeoComply AI Olympia recognition for AI workflow innovation</span>
+            <strong>10+ </strong>
+            <span>Products aligned through a shared design system</span>
           </div>
           <div class="metric-card card">
             <strong>Global</strong>
@@ -194,23 +315,23 @@
         <section class="section split-section" id="ai-workflow">
           <div class="section-heading narrow">
             <p class="eyebrow">AI-driven workflow</p>
-            <h2>Using AI as a practical design accelerator, not a gimmick.</h2>
+            <h2>Applying AI to solve real design and collaboration challenges, not just generate screens.</h2>
           </div>
           <div class="card ai-panel">
             <p>
-              I use AI and automation tools to accelerate iteration, improve collaboration,
-              and reduce friction between design and development.
+             I use AI and automation tools to accelerate ideation, prototyping, documentation, and collaboration. I also build AI-powered workflows that analyze LogRocket session data to uncover UX issues, usability improvements, and user behavior insights.
             </p>
             <ul class="tool-list">
               <li>Claude</li>
+              <li>Codex</li>
+              <li>ChatGPT</li>
               <li>VS Code</li>
               <li>Make</li>
-              <li>Google MCP</li>
-              <li>Atlassian MCP</li>
-              <li>Figma MCP</li>
-              <li>Vertex AI</li>
-              <li>UXPilot</li>
+              <li>Figma</li>
               <li>Stitch</li>
+              <li>Google AI Studio</li>
+              <li>Confluence MCP</li>
+              <li>Figma MCP</li>
             </ul>
           </div>
         </section>
@@ -222,42 +343,28 @@
           </div>
           <div class="timeline">
             <article class="timeline-item card">
-              <div class="timeline-date">2021 - Present</div>
+              <div class="timeline-date">12/2021 - Present</div>
               <h3>GeoComply</h3>
-              <p class="timeline-role">UI/UX Designer</p>
-              <p>
-                Own UX design across Watchtower, CMS, IDComply, KYC, and design system
-                foundations. Led strategic projects with cross-functional stakeholders and
-                supported contract-renewal impact through product delivery.
-              </p>
+              <p class="timeline-role">Senior Product Designer</p>
+              <p>Led UX design across Watchtower, CMS, IDComply, and the company-wide design system. Designed complex workflows across web and mobile, scaled reusable Figma components, and supported strategic enterprise delivery.</p>
             </article>
             <article class="timeline-item card">
-              <div class="timeline-date">2018 - 2021</div>
+              <div class="timeline-date">04/2018 - 12/2021</div>
               <h3>Iconic Group</h3>
               <p class="timeline-role">Design Lead</p>
-              <p>
-                Launched new websites, redesigned hiring products, created conversion
-                landing pages, and mentored designers while coordinating with teams in
-                five countries.
-              </p>
+              <p>Led design direction across product design, branding, marketing, and digital experiences. Managed and mentored the design team, launched new digital products, and coordinated with teams across five countries.</p>
             </article>
             <article class="timeline-item card">
-              <div class="timeline-date">2017 - 2018</div>
+              <div class="timeline-date">08/2017 - 04/2018</div>
               <h3>Nhat Cuong Software</h3>
               <p class="timeline-role">UI/UX Designer</p>
-              <p>
-                Designed core ERP features and contributed to outsourced web projects,
-                balancing product needs with operational workflows.
-              </p>
+              <p>Designed core workflows and key features for ERP systems, improved mobile ERP operational flows, and delivered responsive outsourced web projects with cross-functional teams.</p>
             </article>
             <article class="timeline-item card">
-              <div class="timeline-date">Freelance</div>
+              <div class="timeline-date">2016 - 2022</div>
               <h3>IIT Studio</h3>
-              <p class="timeline-role">UI/UX Designer, Team Lead & Project Manager</p>
-              <p>
-                Managed and delivered 20+ web and app projects, leading distributed teams
-                through planning, design execution, and client communication.
-              </p>
+              <p class="timeline-role">Founder & UI/UX Design Lead</p>
+              <p>Founded and led a small team delivering 20+ web and mobile projects across multiple industries, managing UX strategy, discovery, execution, delivery, and client collaboration.</p>
             </article>
           </div>
         </section>
@@ -266,23 +373,27 @@
           <div class="card stack-card">
             <p class="eyebrow">Skills</p>
             <ul class="detail-list">
-              <li>End-to-end product design</li>
-              <li>Enterprise workflow simplification</li>
-              <li>UX research and usability testing</li>
-              <li>Wireframing and prototyping</li>
-              <li>Cross-platform design</li>
-              <li>Design systems, tokens, and documentation</li>
-              <li>Developer handoff and design QA</li>
+              <li>Product Strategy & End-to-End UX Design</li>
+              <li>Interaction Design & Complex Workflow Simplification</li>
+              <li>Design Systems & Scalable Component Libraries</li>
+              <li>User Research, Usability Testing & Data-Driven Design</li>
+              <li>Cross-Platform Design: Web, Mobile Web, iOS, Android</li>
+              <li>Cross-Functional Leadership & Stakeholder Management</li>
+              <li>Agile Collaboration, Design QA & Developer Handoff</li>
+              <li>AI-Assisted Design Workflows: Claude, Make, Figma, MCP Integrations</li>
             </ul>
           </div>
           <div class="card stack-card">
             <p class="eyebrow">Education & certifications</p>
             <ul class="detail-list">
-              <li>Google UX Design, Coursera</li>
-              <li>Professional Scrum Master I</li>
-              <li>UX Research, Youix Design</li>
-              <li>UI Global Style & UX Component, Youix Design</li>
-              <li>University of Science, Web & Graphic Design</li>
+              <li>Google UX Design - Coursera</li>
+              <li>Professional Scrum Master I - Scrum.org</li>
+              <li>UX Research - Youix Design</li>
+              <li>UI Global Style & UX Component - Youix Design</li>
+              <li>Transformation Coaching - VCI International</li>
+              <li>Web & Graphic Design - University of Science</li>
+              <li>Multimedia Management & Web Development - Asia E University</li>
+              <li>Software Engineering - Infoworld School</li>
             </ul>
           </div>
         </section>
@@ -292,15 +403,18 @@
             <p class="eyebrow">Contact</p>
             <h2>Let’s build products that are simple to use and hard to outgrow.</h2>
             <p>
-              Based in Ho Chi Minh City, Vietnam. Open to senior product design, UX,
-              and design system opportunities.
+              Location: Di An Ward, Ho Chi Minh City. Open to Senior Product Design, UX/UX Design,and design system opportunities.
             </p>
             <div class="contact-actions">
               <a class="button button-primary" href="mailto:thachdang1608@gmail.com">thachdang1608@gmail.com</a>
-              <a class="button button-secondary" href="https://www.behance.net/mrthach" target="_blank" rel="noreferrer">Behance portfolio</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" href="tel:0984010197">Phone / Zalo: 0984 010 197</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
         </section>
+        <a class="back-to-top" href="#top">Back to top</a>
       </main>
     </div>
 

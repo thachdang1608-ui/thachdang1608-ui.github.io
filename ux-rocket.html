@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UX Rocket Case Study | Thach Dang Van</title>
+    <meta
+      name="description"
+      content="UX Rocket portfolio case study by Thach Dang Van. AI-powered UX intelligence platform for session replay analysis, LogRocket data, and automated UX reporting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="fi-bs-magic-wand.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const storedTheme = localStorage.getItem('portfolio-theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell case-shell ux-rocket-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html#top">
+          <span class="brand-mark">TD</span>
+          <span class="brand-text">Thach Dang Van</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="case-hero section">
+          <div class="case-hero-copy">
+            <a class="back-link" href="index.html#work">Back to selected work</a>
+            <p class="eyebrow">Personal Product | AI-Powered UX Intelligence</p>
+            <h1>UX Rocket</h1>
+            <p class="case-lead">
+              An AI-powered analysis platform that transforms raw session recordings,
+              event logs, and replay evidence into actionable UX insights for design,
+              product, and engineering teams.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://ai.studio/apps/drive/1hg-kttiaVQBWfgGrsIjxEfsjg_jReEt7?fullscreenApplet=true" target="_blank" rel="noreferrer">Open in Google AI Studio</a>
+            </div>
+          </div>
+          <aside class="case-summary card">
+            <dl>
+              <div>
+                <dt>Role</dt>
+                <dd>Product Designer, UX Strategist, AI Workflow Designer</dd>
+              </div>
+              <div>
+                <dt>Timeline</dt>
+                <dd>Personal Product, 2026</dd>
+              </div>
+              <div>
+                <dt>Tools</dt>
+                <dd>Google AI Studio, LogRocket API, AI Prompt Engineering, UX Research, Product Design</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Session replay analysis, UX issue detection, technical friction, automated reporting</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="case-visual ux-rocket-visual" aria-label="UX Rocket product dashboard preview">
+          <div class="ux-rocket-ai-ribbon" aria-hidden="true">
+            <span>Session replay</span>
+            <span>Event stream</span>
+            <span>AI analysis</span>
+            <span>UX report</span>
+          </div>
+          <div class="ux-rocket-signal ux-rocket-signal-a" aria-hidden="true"></div>
+          <div class="ux-rocket-signal ux-rocket-signal-b" aria-hidden="true"></div>
+          <div class="ux-rocket-signal ux-rocket-signal-c" aria-hidden="true"></div>
+          <div class="ux-rocket-ai-card ux-rocket-ai-card-left" aria-hidden="true">
+            <span>Friction detected</span>
+            <strong>Form hesitation spike</strong>
+            <small>AI confidence 91%</small>
+          </div>
+          <div class="ux-rocket-ai-card ux-rocket-ai-card-right" aria-hidden="true">
+            <span>Insight summary</span>
+            <strong>Replay patterns grouped</strong>
+            <small>12 sessions analyzed</small>
+          </div>
+          <img class="ux-rocket-hero-image" src="assets/ux-rocket/thumbnail.png" alt="UX Rocket product interface thumbnail" />
+        </section>
+
+        <nav class="case-jump-nav" aria-label="UX Rocket case study sections">
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#goal">Goal</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#screens">Screens</a>
+          <a href="#decisions">UX Decisions</a>
+          <a href="#process">Process</a>
+          <a href="#impact">Impact</a>
+        </nav>
+
+        <section class="section recruiter-snapshot" aria-label="Case study highlights">
+          <div class="section-heading">
+            <p class="eyebrow">Case Study Highlights</p>
+            <h2>Turning replay data into UX intelligence.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>01</span>
+              <h3>Core challenge</h3>
+              <p>Session replay tools collect valuable behavioral data, but insight extraction is still highly manual and hard to scale.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>02</span>
+              <h3>My ownership</h3>
+              <p>Product strategy, UX workflow mapping, AI analysis model, prompt structure, reporting logic, and interface direction.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>03</span>
+              <h3>Product idea</h3>
+              <p>Combine LogRocket data, event logs, video frames, screenshots, and AI-generated summaries in one analysis workflow.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>04</span>
+              <h3>Value</h3>
+              <p>Help teams detect friction faster, identify recurring patterns, and spend more time solving problems than searching for them.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="overview">
+          <article class="case-block card">
+            <p class="eyebrow">Overview</p>
+            <h2>An AI layer for session replay analysis.</h2>
+            <p>
+              UX Rocket is an AI-powered analysis platform that transforms raw session recordings
+              and event logs into actionable UX insights. It helps design, product, and engineering
+              teams automatically identify usability issues, user friction, technical problems, and
+              improvement opportunities without spending hours reviewing session recordings manually.
+            </p>
+            <p>
+              Built using Google AI Studio, the product combines LogRocket session data, replay
+              evidence, video or screenshot analysis, and AI-generated reporting into a single workflow.
+            </p>
+          </article>
+
+          <article class="case-block card" id="goal">
+            <p class="eyebrow">Goal</p>
+            <h2>Help teams focus on solving problems.</h2>
+            <ul class="detail-list">
+              <li>Detect UX friction faster.</li>
+              <li>Surface usability problems automatically.</li>
+              <li>Identify technical issues and broken experiences.</li>
+              <li>Discover recurring behavioral patterns across sessions.</li>
+              <li>Generate daily, weekly, and monthly UX reports.</li>
+              <li>Reduce time spent reviewing recordings manually.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section split-section" id="problem">
+          <div class="section-heading narrow">
+            <p class="eyebrow">The Problem</p>
+            <h2>The real challenge was not collecting data.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              Tools like LogRocket provide valuable behavioral data, but extracting meaningful
+              insights remains a manual process. In my day-to-day work, I often spent hours watching
+              recordings, reviewing interactions, searching for UX issues, identifying technical
+              failures, documenting findings, and sharing notes with stakeholders.
+            </p>
+            <p>
+              As products scale, thousands of sessions are generated every week. The problem becomes
+              less about access to data and more about converting that data into actionable UX intelligence.
+            </p>
+            <ul class="detail-list">
+              <li>High analysis time cost for each investigation.</li>
+              <li>Important issues could be overlooked during manual review.</li>
+              <li>Recurring patterns were difficult to identify across large datasets.</li>
+              <li>Feedback loops between design and engineering were slow.</li>
+              <li>Trend visibility was limited without repeated manual synthesis.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="research">
+          <article class="case-block card">
+            <p class="eyebrow">Research & Discovery</p>
+            <h2>I started by analyzing my own LogRocket workflow.</h2>
+            <p>
+              I mapped the current workflow from opening a replay to sharing findings. A single
+              session could take 10 to 30 minutes to review, while larger investigations could take
+              several hours across multiple recordings and logs.
+            </p>
+            <ul class="detail-list">
+              <li>Open session replay.</li>
+              <li>Watch recording and inspect user interactions.</li>
+              <li>Review event, console, and network logs.</li>
+              <li>Take notes manually.</li>
+              <li>Identify possible UX or technical issues.</li>
+              <li>Document findings for stakeholders.</li>
+            </ul>
+          </article>
+
+          <article class="case-block card">
+            <p class="eyebrow">Pain Points</p>
+            <h2>Manual review did not scale with product complexity.</h2>
+            <ul class="detail-list">
+              <li>Repetitive manual work across similar sessions.</li>
+              <li>Difficult to detect trends across many users.</li>
+              <li>No automated prioritization by frequency or severity.</li>
+              <li>Insight quality depended heavily on reviewer experience.</li>
+              <li>High effort for a workflow that needed better scalability.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="solution">
+          <div class="section-heading">
+            <p class="eyebrow">Solution</p>
+            <h2>Automated analysis from multiple evidence sources.</h2>
+          </div>
+          <div class="case-section-grid">
+            <article class="case-block card">
+              <h3>Upload session data</h3>
+              <p>Teams can bring in LogRocket exports, event logs, console logs, network logs, screenshots, and replay evidence for AI review.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Connect directly to LogRocket</h3>
+              <p>API integration enables session synchronization, automated data retrieval, and faster investigation workflows.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Generate UX intelligence</h3>
+              <p>AI analyzes user journeys, navigation behavior, click patterns, error events, friction points, and drop-off indicators.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Report and monitor trends</h3>
+              <p>The system generates recurring reports, stores recent analyses, and aggregates findings by frequency, impact, and product area.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Return to recent analyses</h3>
+              <p>Recent Analyses gives teams a fast way to reopen previous AI reviews, compare findings, and continue investigations without starting over.</p>
+            </article>
+            <article class="case-block card">
+              <h3>Export and share reports</h3>
+              <p>Generated reports can be exported to Markdown or printed, making it easier to share findings in docs, tickets, and stakeholder reviews.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Key Features</p>
+            <h2>From raw recordings to prioritized insight.</h2>
+          </div>
+          <div class="watchtower-chart-grid">
+            <article class="watchtower-chart-card card">
+              <span>AI</span>
+              <h3>AI-powered session analysis</h3>
+              <p>Reviews navigation patterns, user journeys, click behavior, errors, friction points, and drop-off indicators.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>UX</span>
+              <h3>UX issue detection</h3>
+              <p>Identifies confusing interactions, incomplete flows, usability bottlenecks, navigation issues, and conversion blockers.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>API</span>
+              <h3>Technical issue detection</h3>
+              <p>Highlights API failures, JavaScript errors, rage clicks, dead clicks, broken experiences, and performance concerns.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>BI</span>
+              <h3>Automated reporting</h3>
+              <p>Produces daily, weekly, and monthly reports that help teams continuously monitor product health.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>RA</span>
+              <h3>Recent Analyses</h3>
+              <p>Keeps previous session reviews accessible so teams can revisit findings, compare patterns, and track investigation history.</p>
+            </article>
+            <article class="watchtower-chart-card card">
+              <span>MD</span>
+              <h3>Markdown export and print report</h3>
+              <p>Supports exporting analysis reports to Markdown and printing polished reports for documentation, Jira tickets, or stakeholder updates.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="screens">
+          <div class="section-heading">
+            <p class="eyebrow">Product Screens</p>
+            <h2>UX Rocket interface snapshots.</h2>
+          </div>
+          <div class="screen-gallery ux-rocket-screens">
+            <figure class="screen-shot screen-shot-large">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-02-07-39.png" alt="UX Rocket session analysis dashboard" />
+              <figcaption>
+                <h3>AI session analysis dashboard</h3>
+                <p>A central view for reviewing AI-generated UX findings, friction signals, and session-level evidence.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-02-07-48.png" alt="UX Rocket session data input workflow" />
+              <figcaption>
+                <h3>Session data input</h3>
+                <p>Structured entry points for bringing replay exports, logs, screenshots, and analysis inputs into the workflow.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-02-07-55.png" alt="UX Rocket UX issue detection screen" />
+              <figcaption>
+                <h3>UX issue detection</h3>
+                <p>AI-generated issue summaries help teams identify confusing interactions, dead ends, and conversion blockers.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-02-08-14.png" alt="UX Rocket automated reporting screen" />
+              <figcaption>
+                <h3>Automated reporting and export</h3>
+                <p>Recurring report views summarize key findings, severity, trends, recommended next actions, and provide Markdown export or print options.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-16-37-36.png" alt="UX Rocket trend analysis screen" />
+              <figcaption>
+                <h3>Recent analyses and trends</h3>
+                <p>Recent analyses and aggregated patterns help teams understand which UX and technical issues repeat across sessions.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot screen-shot-large">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-16-57-08.png" alt="UX Rocket report export and print interface" />
+              <figcaption>
+                <h3>Export and print report</h3>
+                <p>The report experience supports sharing through Markdown export and print-ready output for documentation or stakeholder review.</p>
+              </figcaption>
+            </figure>
+            <figure class="screen-shot screen-shot-large">
+              <img src="assets/ux-rocket/screenshot-2026-05-29-16-45-30.png" alt="UX Rocket detailed analysis report overview" />
+              <figcaption>
+                <h3>Detailed analysis report overview</h3>
+                <p>The report UI turns session evidence into a structured summary with detected issues, severity, impact, and recommended actions.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="decisions">
+          <article class="case-block card">
+            <p class="eyebrow">UX Decisions</p>
+            <h2>Multimodal analysis improved context quality.</h2>
+            <p>
+              Instead of relying only on event logs, I combined session events, replay screenshots,
+              and video analysis. This gave the AI model richer behavioral and visual context, making
+              the generated insights more useful for product teams.
+            </p>
+          </article>
+
+          <article class="case-block card">
+            <p class="eyebrow">Workflow Strategy</p>
+            <h2>Multiple entry points reduced adoption friction.</h2>
+            <p>
+              The product supports pasting logs, uploading files, uploading screenshots, and connecting
+              through the LogRocket API. This progressive workflow lets different teams start with the
+              level of integration they can support.
+            </p>
+          </article>
+        </section>
+
+        <section class="section split-section">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Automation First</p>
+            <h2>The product was designed to remove repetitive operational work.</h2>
+          </div>
+          <div class="card case-block">
+            <p>
+              I prioritized automation across data synchronization, AI analysis, report generation,
+              and trend detection. The intent was not to replace product judgment, but to reduce the
+              amount of repetitive review work required before teams could make decisions.
+            </p>
+            <ul class="detail-list">
+              <li>Automated data synchronization from LogRocket.</li>
+              <li>AI-generated session summaries and issue classification.</li>
+              <li>Automated reporting for recurring product health reviews.</li>
+              <li>Recent Analyses history for reopening previous investigations.</li>
+              <li>Markdown export and print report actions for stakeholder sharing.</li>
+              <li>Trend detection across large groups of sessions.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section case-section-grid" id="process">
+          <article class="case-block card">
+            <p class="eyebrow">Low-Fidelity Exploration</p>
+            <h2>I focused first on workflow and reporting structure.</h2>
+            <ul class="detail-list">
+              <li>Analysis workflow and entry points.</li>
+              <li>Input methods for logs, exports, screenshots, and API sync.</li>
+              <li>Reporting structure for session, daily, weekly, and monthly summaries.</li>
+              <li>Prioritization model based on frequency, severity, and user impact.</li>
+            </ul>
+          </article>
+
+          <article class="case-block card">
+            <p class="eyebrow">High-Fidelity Design</p>
+            <h2>I shaped a modern AI-product experience.</h2>
+            <ul class="detail-list">
+              <li>Dark mode and light mode directions.</li>
+              <li>Structured data input flows.</li>
+              <li>Session analysis dashboard.</li>
+              <li>Automated reporting screens.</li>
+              <li>Recent Analyses screen for reviewing previous AI reports.</li>
+              <li>Export to Markdown and print report actions.</li>
+              <li>Settings for synchronization and real-time updates.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section case-section-grid" id="impact">
+          <article class="case-block card">
+            <p class="eyebrow">Outcome & Impact</p>
+            <h2>A manual analysis workflow became AI-assisted.</h2>
+            <p>
+              UX Rocket transformed session review from a repetitive manual workflow into a scalable
+              AI-assisted process. It created a faster path from raw behavioral evidence to product
+              insight, team discussion, prioritization, and action.
+            </p>
+            <ul class="detail-list">
+              <li>Reduced manual session review time significantly.</li>
+              <li>Accelerated UX issue discovery.</li>
+              <li>Improved visibility into recurring user problems.</li>
+              <li>Enabled automated reporting workflows.</li>
+              <li>Created a scalable approach for analyzing large volumes of behavioral data.</li>
+            </ul>
+          </article>
+
+          <article class="case-block card" id="reflection">
+            <p class="eyebrow">Reflection</p>
+            <h2>The value is in converting data into decisions.</h2>
+            <p>
+              This project reinforced an important lesson: session replay tools generate valuable
+              data, but the real value comes from converting that data into actionable decisions.
+            </p>
+            <p>
+              UX Rocket demonstrates how AI can augment product design workflows by reducing
+              repetitive analysis work and helping teams focus on solving user problems, improving
+              usability, and delivering better product experiences.
+            </p>
+          </article>
+        </section>
+
+        <section class="section case-next-section" aria-label="Read another case study">
+          <div class="section-heading">
+            <p class="eyebrow">Next Case Studies</p>
+            <h2>Continue reviewing related product work.</h2>
+          </div>
+          <div class="work-category-heading">
+            <h3>Product Design</h3>
+            <p>Enterprise UX case studies shaped around clarity, scale, and business impact.</p>
+          </div>
+          <div class="card-grid work-grid">
+            <article class="card project-card">
+              <a href="watchtower.html" aria-label="Open Watchtower case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>Watchtower executive fraud analytics</h3>
+                <p>See how I designed an executive dashboard that translated complex fraud data into strategic business insight.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="idcomply.html" aria-label="Open IDComply case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>IDComply global identity verification platform</h3>
+                <p>See how I helped define and scale a cross-platform identity verification product across web, Android, iOS, and operational systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="gc-design-system.html" aria-label="Open GC Design System case study">
+                <div class="project-meta">GeoComply</div>
+                <h3>GC Design System</h3>
+                <p>See how I led design system strategy, governance, documentation, and implementation alignment across GeoComply products.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+          <div class="work-category-heading work-category-heading-spaced">
+            <h3>Design Engineering with AI</h3>
+            <p>Practical AI workflows that connect design, documentation, and implementation.</p>
+          </div>
+          <div class="card-grid ai-work-grid">
+            <article class="card project-card">
+              <a href="chromaops.html" aria-label="Open ChromaOps case study">
+                <div class="project-meta">AI Product</div>
+                <h3>ChromaOps</h3>
+                <p>An AI-powered DesignOps platform for generating color foundations, validating accessibility, creating tokens, and producing implementation-ready documentation.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+            <article class="card project-card">
+              <a href="radius-engine.html" aria-label="Open Radius Engine case study">
+                <div class="project-meta">AI Product</div>
+                <h3>Radius Engine</h3>
+                <p>An AI-powered geometry utility for calculating, validating, visualizing, and exporting scalable radius systems.</p>
+                <span class="card-link">View case study</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card card">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in AI-assisted UX workflows?</h2>
+            <p>Open to Senior Product Designer, UX Designer, and Design System opportunities.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:thachdang1608@gmail.com">thachdang1608@gmail.com</a>
+              <a class="button button-secondary" href="cv.html">View CV</a>
+              <a class="button button-secondary" href="assets/thach-dang-van-senior-product-designer.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a class="button button-secondary" href="tel:0984010197">Phone / Zalo: 0984010197</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/mrthach/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
