@@ -1010,14 +1010,22 @@ h2 {
 }
 
 .watchtower-impact-card h2,
-.watchtower-impact-card h3,
+.watchtower-impact-card h3 {
+  color: #faf9f5;
+}
+
 .watchtower-impact-card p,
 .watchtower-impact-card li {
-  color: #faf9f5;
+  color: rgba(250, 249, 245, 0.72);
 }
 
 .watchtower-impact-card .eyebrow {
   color: var(--accent-3);
+}
+
+.watchtower-impact-card .eyebrow::before,
+.watchtower-impact-card .detail-list li::before {
+  background: var(--accent-3);
 }
 
 .watchtower-impact-card .detail-list li {
