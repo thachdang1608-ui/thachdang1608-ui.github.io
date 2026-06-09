@@ -986,6 +986,44 @@ h2 {
   margin-bottom: 0;
 }
 
+.watchtower-impact-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.watchtower-impact-card,
+.watchtower-reflection-card {
+  padding: clamp(36px, 6vw, 72px);
+}
+
+.watchtower-impact-card h2,
+.watchtower-reflection-card h2 {
+  max-width: 18ch;
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.watchtower-impact-card {
+  background: var(--surface-dark);
+  border-color: var(--surface-dark);
+}
+
+.watchtower-impact-card h2,
+.watchtower-impact-card h3,
+.watchtower-impact-card p,
+.watchtower-impact-card li {
+  color: #faf9f5;
+}
+
+.watchtower-impact-card .eyebrow {
+  color: var(--accent-3);
+}
+
+.watchtower-impact-card .detail-list li {
+  border-color: rgba(250, 249, 245, 0.12);
+}
+
 .persona-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
