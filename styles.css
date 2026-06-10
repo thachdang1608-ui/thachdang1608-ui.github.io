@@ -891,6 +891,7 @@ h2 {
 #exploration,
 #ia,
 #strategy,
+#hifi-design,
 #engineering,
 #governance,
 #design,
@@ -955,6 +956,14 @@ h2 {
   margin-bottom: 0;
 }
 
+.ds-storybook-outcome {
+  margin-top: 24px;
+}
+
+.ds-engineering-integration {
+  margin-top: 24px;
+}
+
 .case-section-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -967,6 +976,20 @@ h2 {
 
 .idcomply-business-grid .case-block {
   padding: 40px;
+}
+
+.idcomply-phase-two-gallery,
+.idcomply-phase-two-structure {
+  margin-top: 24px;
+}
+
+.idcomply-phase-two-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.idcomply-phase-two-gallery .screen-shot img {
+  height: auto;
+  object-fit: contain;
 }
 
 .case-block,
@@ -1072,11 +1095,17 @@ h2 {
 .idcomply-structure-visual img {
   height: auto;
   object-fit: contain;
-  background: var(--bg);
+  background: transparent;
 }
 
 .idcomply-structure-visual img {
   width: 50%;
+  margin-inline: auto;
+  border-color: transparent;
+}
+
+.idcomply-process-visual img {
+  width: min(100%, 760px);
   margin-inline: auto;
 }
 
