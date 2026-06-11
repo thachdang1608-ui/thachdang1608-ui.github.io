@@ -175,6 +175,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 18px;
+  margin-left: auto;
   color: var(--muted);
   font-size: 14px;
   font-weight: 500;
@@ -3055,6 +3056,7 @@ h2 {
   .site-nav {
     flex-wrap: wrap;
     gap: 12px 16px;
+    margin-left: 0;
   }
 
   h1 {
