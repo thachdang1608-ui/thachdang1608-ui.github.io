@@ -68,6 +68,10 @@ body::after {
   display: none;
 }
 
+body[data-protected-case]:not(.case-unlocked) .page-shell {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -283,6 +287,75 @@ h1 {
   background: var(--bg);
   border-color: var(--line);
   color: var(--text);
+}
+
+.case-password-gate {
+  display: grid;
+  min-height: 100vh;
+  padding: 32px;
+  place-items: center;
+}
+
+.case-password-card {
+  width: min(100%, 560px);
+  padding: clamp(28px, 5vw, 48px);
+  border-radius: var(--radius-xl);
+}
+
+.case-password-brand {
+  margin-bottom: 48px;
+}
+
+.case-password-card h1 {
+  max-width: 11ch;
+  margin-bottom: 18px;
+}
+
+.case-password-copy {
+  max-width: 44ch;
+  color: var(--lead-text);
+}
+
+.case-password-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.case-password-form label {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.case-password-form input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  color: var(--text);
+  background: var(--surface-strong);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font: inherit;
+}
+
+.case-password-form input:focus {
+  border-color: var(--accent);
+  outline: 3px solid rgba(204, 120, 92, 0.22);
+}
+
+.case-password-error {
+  margin: 0;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.case-password-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .contact-actions a[href^="mailto:"],
