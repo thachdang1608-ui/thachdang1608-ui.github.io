@@ -11,23 +11,27 @@ const protectedCase = document.body.dataset.protectedCase !== undefined;
 
 if (protectedCase) {
   const password = 'thach2026';
+  const publicAccessUntil = new Date('2026-09-13T23:59:59');
   const caseTitle = document.body.dataset.caseTitle || 'Case study';
   const accessDuration = 30 * 60 * 1000;
   let accessTimer;
 
-  sessionStorage.removeItem('portfolio-protected-case-access');
+  if (Date.now() <= publicAccessUntil.getTime()) {
+    document.body.classList.add('case-unlocked');
+  } else {
+    sessionStorage.removeItem('portfolio-protected-case-access');
 
-  const showPasswordGate = () => {
-    clearTimeout(accessTimer);
-    document.body.classList.remove('case-unlocked');
+    const showPasswordGate = () => {
+      clearTimeout(accessTimer);
+      document.body.classList.remove('case-unlocked');
 
-    if (document.querySelector('.case-password-gate')) {
-      return;
-    }
+      if (document.querySelector('.case-password-gate')) {
+        return;
+      }
 
-    const gate = document.createElement('main');
-    gate.className = 'case-password-gate';
-    gate.innerHTML = `
+      const gate = document.createElement('main');
+      gate.className = 'case-password-gate';
+      gate.innerHTML = `
       <section class="case-password-card card" aria-labelledby="case-password-title">
         <a class="brand case-password-brand" href="index.html#top">
           <span class="brand-mark">TD</span>
@@ -48,29 +52,30 @@ if (protectedCase) {
       </section>
     `;
 
-    document.body.prepend(gate);
+      document.body.prepend(gate);
 
-    const form = gate.querySelector('.case-password-form');
-    const input = gate.querySelector('#case-password-input');
-    const error = gate.querySelector('.case-password-error');
+      const form = gate.querySelector('.case-password-form');
+      const input = gate.querySelector('#case-password-input');
+      const error = gate.querySelector('.case-password-error');
 
-    input.focus();
-
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      if (input.value === password) {
-        document.body.classList.add('case-unlocked');
-        gate.remove();
-        accessTimer = setTimeout(showPasswordGate, accessDuration);
-        return;
-      }
-
-      error.hidden = false;
-      input.select();
       input.focus();
-    });
-  };
 
-  showPasswordGate();
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (input.value === password) {
+          document.body.classList.add('case-unlocked');
+          gate.remove();
+          accessTimer = setTimeout(showPasswordGate, accessDuration);
+          return;
+        }
+
+        error.hidden = false;
+        input.select();
+        input.focus();
+      });
+    };
+
+    showPasswordGate();
+  }
 }
