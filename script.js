@@ -7,6 +7,7 @@ navLinks.forEach((link) => {
   });
 });
 
+const passwordProtectionEnabled = true;
 const protectedCase = document.body.dataset.protectedCase !== undefined;
 
 if (protectedCase) {
@@ -16,7 +17,7 @@ if (protectedCase) {
   const accessDuration = 30 * 60 * 1000;
   let accessTimer;
 
-  if (Date.now() <= publicAccessUntil.getTime()) {
+  if (!passwordProtectionEnabled || Date.now() <= publicAccessUntil.getTime()) {
     document.body.classList.add('case-unlocked');
   } else {
     sessionStorage.removeItem('portfolio-protected-case-access');
