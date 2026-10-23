@@ -7,7 +7,7 @@ navLinks.forEach((link) => {
   });
 });
 
-const passwordProtectionEnabled = true;
+const passwordProtectionEnabled = false;
 const protectedCase = document.body.dataset.protectedCase !== undefined;
 
 if (protectedCase) {
